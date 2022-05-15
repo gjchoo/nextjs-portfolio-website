@@ -3,8 +3,12 @@ import Head from "next/head";
 
 import styles from "../styles/Home.module.css";
 
-import { Nav } from "../stories/compounds/nav/nav";
+import { Navigation } from "../stories/compounds/navigation/navigation";
 import { SocialMedia } from "../stories/compounds/socialMedia/socialMedia";
+import { Email } from "../stories/compounds/email/email";
+
+import { Introduction } from "../stories/molecule/introduction/introduction";
+import { AboutMyself } from "../stories/molecule/aboutMyself/aboutMyself";
 
 const Home: NextPage = () => {
   return (
@@ -89,11 +93,19 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-
       <main className={styles.main}>
-        <Nav />
+        <Navigation />
 
         <SocialMedia orientation="vertical" />
+        <Email />
+
+        <section>
+          <Introduction />
+        </section>
+
+        <section>
+          <AboutMyself />
+        </section>
       </main>
     </div>
   );

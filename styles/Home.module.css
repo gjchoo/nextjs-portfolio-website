@@ -1,6 +1,6 @@
 .main {
   min-height: 100vh;
-  padding: 0em 0;
+  /* padding: 0px 100px 0px 100px; */
   flex: 1;
   display: flex;
   flex-direction: column;

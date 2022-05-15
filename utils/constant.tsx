@@ -1,3 +1,5 @@
+export const imgGenericAlt = "Singapore Software Engineer GJCHOO";
+
 export const navIconSize = 25;
 
 export const socialMedia = [
@@ -27,4 +29,45 @@ export const socialMedia = [
     alt: "",
     key: "",
   },
+];
+
+export const emailAddress = "gjchoo@icloud.com";
+
+export const hamBurger = "/hamburger.svg";
+
+export const mainIcon = "/gj-white-icon.svg";
+
+export const navigationList = [
+  {
+    title: "about",
+    url: "#about-section",
+  },
+  {
+    title: "profile",
+    url: "#profile-section",
+  },
+  {
+    title: "gj",
+    url: "#introduction",
+    icon: true,
+    path: mainIcon,
+  },
+  {
+    title: "work",
+    url: "#work-section",
+  },
+  {
+    title: "contact",
+    url: "#contact-section",
+  },
+];
+
+export const skillList = [
+  "Javascript (ES6)",
+  "Typescript",
+  "React",
+  "React Native",
+  "NodeJS",
+  "NextJS",
+  "WebPack 5",
 ];
