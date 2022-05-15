@@ -37,8 +37,6 @@ export const Navigation = () => {
           setDownDirection(true);
         }
       } else if (y < window.scrollY) {
-        console.log("scrolling down");
-        // fadeIn.
         if (null !== moileNavigation.current) {
           setDownDirection(false);
         }

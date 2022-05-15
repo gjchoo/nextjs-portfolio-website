@@ -12,7 +12,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof SocialMedia> = (args) => (
-  <div className="background-color absolute-all">
+  <div className="absolute-all" style={{ backgroundColor: "black" }}>
     <SocialMedia {...args} />
   </div>
 );

@@ -42,6 +42,10 @@ p {
   right: 0;
 }
 
+.height100vh {
+  height: 100vh;
+}
+
 .primary-color {
   color: white;
 }
@@ -49,9 +53,13 @@ p {
 .secondary-color {
   color: #bebebe;
 }
+
+.tertiary-color {
+  color: #6b6b6b;
+}
 // #9d9d9d
 .background-color {
-  background-color: black;
+  background-color: black !important;
 }
 
 .after-border li:last-of-type {
@@ -112,6 +120,18 @@ p {
   filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1200%);
 }
 
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.55s linear;
+}
+
 .border {
   border: 1px solid black;
 }
@@ -119,6 +139,11 @@ p {
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .justify-center {
@@ -142,8 +167,7 @@ p {
     height: 100px;
     padding: 0px 20px;
     width: 768px;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.25s linear;
+    display: flex;
   }
 
   .mobile-nav-bar {
@@ -156,6 +180,7 @@ p {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.25s, opacity 0.25s linear;
+    background-color: black;
   }
 
   .social-media-desktop {
@@ -170,10 +195,16 @@ p {
   .desktop-email {
     position: fixed;
     right: 25px;
-    top: 35vh;
+    top: 50vh;
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.25s linear;
+  }
+
+  .mobile-only {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s, opacity 0.25s linear;
   }
 
   section {
@@ -193,8 +224,7 @@ p {
     height: 100px;
     padding: 0px 20px;
     width: 768px;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.25s linear;
+    display: none;
   }
 
   .mobile-nav-bar {
@@ -207,6 +237,7 @@ p {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.25s linear;
+    background-color: black;
   }
 
   .social-media-desktop {
@@ -221,7 +252,7 @@ p {
   .desktop-email {
     position: absolute;
     right: 25px;
-    top: 35vh;
+    top: 50vh;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.25s, opacity 0.25s linear;
@@ -234,9 +265,15 @@ p {
     right: 0;
   }
 
+  .mobile-only {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+
   section {
     margin: 0px auto;
-    padding: 120px 20px 0px 20px;
+    padding: 200px 20px 0px 20px;
     max-width: 1000px;
     transition-delay: 0.25ms;
     transition: padding 0.25s;

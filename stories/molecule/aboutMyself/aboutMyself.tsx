@@ -7,10 +7,14 @@ export interface AboutMyselfProps {}
 
 export const AboutMyself = ({}: AboutMyselfProps) => {
   return (
-    <div id="about-section" data-testid="storybook-about-myself">
+    <div
+      id="about-section"
+      data-testid="storybook-about-myself"
+      className="paddingVertical-20"
+    >
       <h2>
         <span className="regular fs18 secondary-color">01: </span>
-        <span className="semibold fs24 primary-color">About Myself</span>
+        <span className="regular fs24 primary-color">About Myself</span>
       </h2>
       <p className={`light fs18 secondary-color`}>
         Hello! My name is Gian Jie and I enjoy seeing people using the products

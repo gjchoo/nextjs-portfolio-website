@@ -11,7 +11,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Introduction> = (args) => (
-  <div className="background-color">
+  <div className="absolute-all" style={{ backgroundColor: "black" }}>
     <Introduction />
   </div>
 );

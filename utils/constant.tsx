@@ -67,7 +67,80 @@ export const skillList = [
   "Typescript",
   "React",
   "React Native",
-  "NodeJS",
-  "NextJS",
+  "Node.js",
+  "Next.js",
   "WebPack 5",
+];
+
+export const experienceList = [
+  {
+    company: "IBM",
+    title: "Frontend Software Engineer",
+    duration: "Feb 2022 - Present",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "EYOS",
+    title: "Mobile Engineer (React Native)",
+    duration: "Mar 2020 - Feb 2022",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "OC Digital",
+    title: "Frontend Software Engineer",
+    duration: "Jul 2019 - Mar 2020",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "Bubbies Co",
+    title: "Fullstack Software Engineer",
+    duration: "Jan - Jul 2019",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "HappyHourSG",
+    title: "Software Engineer",
+    duration: "Aug 2018 - Jan 2019",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "Spae",
+    title: "Junior Software Engineer",
+    duration: "Nov 2017 - Aug 2018",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
+  {
+    company: "WieldyWorld",
+    title: "Software Engineer Intern",
+    duration: "Jan - Aug 2017",
+    highlights: [
+      "Collaborate with stakeholders with the team to bring concept to life for our clients",
+      "Developing, maintaining user interface and optimising user experience in web applications",
+      "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
+    ],
+  },
 ];
