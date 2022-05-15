@@ -9,12 +9,15 @@ import { Email } from "../stories/compounds/email/email";
 
 import { Introduction } from "../stories/molecule/introduction/introduction";
 import { AboutMyself } from "../stories/molecule/aboutMyself/aboutMyself";
+import { Experience } from "../stories/molecule/experience/experience";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Gian Jie | Software Engineer</title>
+        <title>
+          Gian Jie - A Software Engineer Who Loves To Develop Web And Mobile App
+        </title>
         <meta
           name="description"
           content="I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
@@ -105,6 +108,10 @@ const Home: NextPage = () => {
 
         <section>
           <AboutMyself />
+        </section>
+
+        <section style={{ width: "100%" }}>
+          <Experience />
         </section>
       </main>
     </div>
