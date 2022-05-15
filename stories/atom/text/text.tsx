@@ -52,7 +52,7 @@ export const Text = ({
   size,
   weight,
   lineHeight = 29,
-  color = "secondary",
+  color = "secondary-color",
 }: TextProps) => {
   return (
     <p

@@ -6,6 +6,7 @@ body {
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -29,11 +30,34 @@ ul {
   list-style-type: none;
 }
 
+p {
+  line-height: 29px;
+}
+
+.absolute-all {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.primary-color {
+  color: white;
+}
+
+.secondary-color {
+  color: #bebebe;
+}
+// #9d9d9d
+.background-color {
+  background-color: black;
+}
+
 .after-border li:last-of-type {
-  content: "";
   display: block;
-  width: 1px;
-  height: 120px;
+  width: 0.5px;
+  height: 140px;
   margin: 0px auto;
   background-color: #808080;
 }
@@ -67,7 +91,7 @@ ul {
 }
 
 .fs18 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
 .fs14 {
@@ -112,45 +136,110 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .desktop-nav-bar {
+    position: absolute;
+    top: 0;
     display: flex;
     height: 100px;
     padding: 0px 20px;
     width: 768px;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.25s linear;
   }
 
   .mobile-nav-bar {
-    display: none;
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100px;
+    padding: 0px 20px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s, opacity 0.25s linear;
   }
 
   .social-media-desktop {
     position: fixed;
     left: 20px;
-    top: 50%;
+    top: 35vh;
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+
+  .desktop-email {
+    position: fixed;
+    right: 25px;
+    top: 35vh;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+
+  section {
+    margin: 0px auto;
+    padding: 200px 100px 0px 100px;
+    max-width: 1000px;
+    transition-delay: 0.25ms;
+    transition: padding 0.25s;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .desktop-nav-bar {
-    display: none;
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100px;
+    padding: 0px 20px;
+    width: 768px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.25s linear;
   }
 
   .mobile-nav-bar {
+    position: absolute;
+    top: 0;
     display: flex;
     height: 100px;
     padding: 0px 20px;
     width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.25s linear;
   }
 
   .social-media-desktop {
     position: fixed;
     left: 20px;
-    top: 50%;
+    top: 35vh;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    transition: visibility 0.25s, opacity 0.25s linear;
+  }
+
+  .desktop-email {
+    position: absolute;
+    right: 25px;
+    top: 35vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s, opacity 0.25s linear;
+  }
+
+  .mobile-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  section {
+    margin: 0px auto;
+    padding: 120px 20px 0px 20px;
+    max-width: 1000px;
+    transition-delay: 0.25ms;
+    transition: padding 0.25s;
   }
 }
 
@@ -182,16 +271,24 @@ ul {
   padding: 10px 20px;
 }
 
-.width-45 {
-  width: 45px;
+.marginHorizontal-10 {
+  margin: 0px 10px;
 }
 
-.vertical-text {
-  float: left;
+.marginHorizontal-20 {
+  margin: 0px 20px;
+}
 
-  /** Rotation */
-  width: 25px;
-  transform: rotate(90deg);
+.marginVertical-10 {
+  margin: 10px 0px;
+}
+
+.marginVertical-20 {
+  margin: 20px 0px;
+}
+
+.width-45 {
+  width: 45px;
 }
 
 .full-width {

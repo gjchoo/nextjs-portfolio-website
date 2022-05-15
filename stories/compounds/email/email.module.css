@@ -1,0 +1,16 @@
+.border {
+  height: 150px;
+  width: 0.5px;
+  position: absolute;
+  background-color: #808080;
+  top: -140px;
+  left: 11px;
+}
+
+.verticalText {
+  float: left;
+
+  /** Rotation */
+  width: 25px;
+  transform: rotate(90deg);
+}
