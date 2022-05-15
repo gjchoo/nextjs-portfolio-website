@@ -12,9 +12,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof SocialMedia> = (args) => (
-  <div style={{ backgroundColor: "black" }}>
-    <SocialMedia {...args} />
-  </div>
+  <SocialMedia {...args} />
 );
 
 export const Horizontal = Template.bind({});

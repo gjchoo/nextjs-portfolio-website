@@ -2,23 +2,21 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Img } from "./img";
-import Github from "../../assets/github.svg";
-import Instagram from "../../assets/instagram.svg";
-import LinkedIn from "../../assets/linkedin.svg";
-import Twitter from "../../assets/twitter.svg";
+import { socialMedia } from "../../../utils/constant";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+const arrayList = socialMedia.filter((e) => e.src).map((e) => e.src);
+
 export default {
   title: "Atoms/Img",
   component: Img,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     src: {
-      options: [0, 1, 2, 3], // iterator
-      mapping: [Github, Instagram, LinkedIn, Twitter], // values
+      options: Array.from({ length: arrayList.length }, (_, i) => i), // iterator
+      mapping: arrayList, // values
       control: {
         type: "select",
-        labels: ["Github", "Instagram", "LinkedIn", "Twitter"],
+        labels: arrayList,
       },
     },
     hover: {
@@ -39,7 +37,7 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   alt: "This is a sample of a dummy img",
-  src: Github,
+  src: arrayList[0],
   height: 32,
   width: 32,
   hover: false,

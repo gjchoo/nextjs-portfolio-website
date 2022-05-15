@@ -3,12 +3,7 @@ import React from "react";
 
 import { Img } from "../../atom/img/img";
 
-import { navIconSize } from "../../../utils/constant";
-
-import Github from "../../assets/github.svg";
-import Instagram from "../../assets/instagram.svg";
-import LinkedIn from "../../assets/linkedin.svg";
-import Twitter from "../../assets/twitter.svg";
+import { navIconSize, socialMedia } from "../../../utils/constant";
 
 export interface SocialMediaProps {
   orientation?: string;
@@ -19,34 +14,6 @@ export interface SocialMediaListProps {
   alt: string;
   key: string;
 }
-
-const SocialMediaList = [
-  {
-    src: "/linkedin.svg" || LinkedIn,
-    alt: "Software Engineer Singapore Gjchoo",
-    key: "https://www.linkedin.com/in/gjchoo/",
-  },
-  {
-    src: "/github.svg" || Github,
-    alt: "Github software Engineer Gjchoo",
-    key: "https://github.com/gjchoo",
-  },
-  {
-    src: "/twitter.svg" || Twitter,
-    alt: "Twitter Software Engineer Gjchoo",
-    key: "https://twitter.com/gjchooo",
-  },
-  {
-    src: "/instagram.svg" || Instagram,
-    alt: "Instagram Software Engineer Gjchoo",
-    key: "https://www.instagram.com/gjchoo/",
-  },
-  {
-    src: "",
-    alt: "",
-    key: "",
-  },
-];
 
 export const SocialMedia = ({
   orientation = "horizontal",
@@ -60,7 +27,7 @@ export const SocialMedia = ({
             : "column width-45 after-border social-media-desktop"
         }`}
       >
-        {SocialMediaList.map((e: SocialMediaListProps) =>
+        {socialMedia.map((e: SocialMediaListProps) =>
           e.key ? (
             <li
               key={e.alt}
@@ -80,7 +47,7 @@ export const SocialMedia = ({
               </a>
             </li>
           ) : (
-            <li />
+            <li key={e.alt} />
           )
         )}
       </ul>
