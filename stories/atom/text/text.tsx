@@ -18,6 +18,10 @@ export enum SizeTypes {
 
 export interface TextProps {
   /**
+   * additional classNames
+   */
+  className?: string;
+  /**
    * text contents
    */
   text: string;
@@ -43,6 +47,7 @@ export interface TextProps {
  * Primary UI component for user interaction
  */
 export const Text = ({
+  className,
   text,
   size,
   weight,
@@ -52,7 +57,7 @@ export const Text = ({
   return (
     <p
       data-testid="storybook-p"
-      className={[text, weight, size, color].join(" ")}
+      className={[text, weight, size, color, className].join(" ")}
       style={{ lineHeight: `${lineHeight}px`, color }}
     >
       {text}

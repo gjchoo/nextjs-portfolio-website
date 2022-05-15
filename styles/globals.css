@@ -17,6 +17,27 @@ a {
   box-sizing: border-box;
 }
 
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.after-border li:last-of-type {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 120px;
+  margin: 0px auto;
+  background-color: #808080;
+}
+
 .semibold {
   font-weight: 600;
 }
@@ -59,4 +80,120 @@ a {
 
 .secondary {
   color: #9d9d9d;
+}
+
+.storybook-hover-icon:hover,
+.storybook-hover-icon:focus {
+  transition: 5s;
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1200%);
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-nav-bar {
+    display: flex;
+    height: 100px;
+    padding: 0px 20px;
+    width: 768px;
+  }
+
+  .mobile-nav-bar {
+    display: none;
+  }
+
+  .social-media-desktop {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-nav-bar {
+    display: none;
+  }
+
+  .mobile-nav-bar {
+    display: flex;
+    height: 100px;
+    padding: 0px 20px;
+    width: 100%;
+  }
+
+  .social-media-desktop {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+  }
+}
+
+.paddingHorizontal-10 {
+  padding: 0px 10px;
+}
+
+.paddingHorizontal-20 {
+  padding: 0px 20px;
+}
+
+.paddingVertical-10 {
+  padding: 10px 0px;
+}
+
+.paddingVertical-20 {
+  padding: 20px 0px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.paddingHorizontal-10-20 {
+  padding: 10px 20px;
+}
+
+.width-45 {
+  width: 45px;
+}
+
+.vertical-text {
+  float: left;
+
+  /** Rotation */
+  width: 25px;
+  transform: rotate(90deg);
+}
+
+.full-width {
+  width: 100%;
 }
