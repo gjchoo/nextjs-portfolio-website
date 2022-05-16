@@ -29,16 +29,18 @@ export const Navigation = () => {
   const [downDirection, setDownDirection] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   useEffect(() => {
     const onScroll = (e: any) => {
       const window = e.currentTarget;
       if (y > window.scrollY) {
         if (null !== moileNavigation.current) {
-          setDownDirection(true);
+          // setDownDirection(true);
         }
       } else if (y < window.scrollY) {
         if (null !== moileNavigation.current) {
-          setDownDirection(false);
+          // setDownDirection(false);
         }
       }
       setY(window.scrollY);
@@ -69,6 +71,8 @@ export const Navigation = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const onMobileHamBurgerHandle = () => setMobileMenu(!mobileMenu);
 
   return (
     <header className="full-width mobile-sticky">
@@ -111,9 +115,10 @@ export const Navigation = () => {
         >
           <div
             ref={moileNavigation}
-            className={[`row justify-between align-center mobile-nav-bar`].join(
-              " "
-            )}
+            className={[
+              `row justify-between align-center mobile-nav-bar`,
+              styles.hamBurgerContainer,
+            ].join(" ")}
           >
             <Link href={navigationList[2].url}>
               <a className="storybook-hover-icon">
@@ -125,14 +130,58 @@ export const Navigation = () => {
                 />
               </a>
             </Link>
-            <span className="storybook-hover-icon">
-              <Img
-                src={hamBurger}
-                width={navIconSize}
-                height={navIconSize}
-                alt={imgGenericAlt + "hamburger icon"}
+
+            <div
+              onClick={onMobileHamBurgerHandle}
+              className={["storybook-hover-icon", styles.hamBurgerContent].join(
+                " "
+              )}
+            >
+              <div
+                className={mobileMenu ? styles.barOneActive : styles.barOne}
               />
-            </span>
+              <div
+                className={mobileMenu ? styles.barTwoActive : styles.barTwo}
+              />
+              <div
+                className={mobileMenu ? styles.barThreeActive : styles.barThree}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={mobileMenu ? styles.overlayActive : styles.overlay} />
+        <div
+          className={mobileMenu ? styles.overlayMenuActive : styles.overlayMenu}
+        >
+          <div className="column justify-center" style={{ height: "100%" }}>
+            <ol className="column justify-between align-center">
+              {navigationList.map(
+                (e: NavListItemProps) =>
+                  !e.icon && (
+                    <li key={e.title} onClick={onMobileHamBurgerHandle}>
+                      <Link href={e.url}>
+                        <a className="storybook-hover-icon">
+                          <Text
+                            text={e.title.toUpperCase()}
+                            size={SizeTypes.fs18}
+                            weight={WeightTypes.regular}
+                            color="primary"
+                          />
+                        </a>
+                      </Link>
+                    </li>
+                  )
+              )}
+            </ol>
+            <div onClick={onMobileHamBurgerHandle}>
+              <Text
+                className={styles.centralisedText}
+                text={"CANCEL".toUpperCase()}
+                size={SizeTypes.fs18}
+                weight={WeightTypes.regular}
+                color="primary"
+              />
+            </div>
           </div>
         </div>
       </nav>
