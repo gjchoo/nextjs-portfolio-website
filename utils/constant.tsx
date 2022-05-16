@@ -135,7 +135,7 @@ export const experienceList = [
   },
   {
     company: "WieldyWorld",
-    title: "Software Engineer Intern",
+    title: "Intern Software Engineer",
     duration: "Jan - Aug 2017",
     highlights: [
       "Collaborate with stakeholders with the team to bring concept to life for our clients",

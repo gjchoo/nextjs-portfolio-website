@@ -30,8 +30,6 @@ export const Experience = () => {
 
   const isCurrentCompany = (company: string) => company === currentCompany;
 
-  console.log(parseInt(index, 0), experienceList.length - 1);
-
   return (
     <div
       id="profile-section"

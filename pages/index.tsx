@@ -113,6 +113,10 @@ const Home: NextPage = () => {
         <section style={{ width: "100%" }}>
           <Experience />
         </section>
+
+        <section>
+          <AboutMyself />
+        </section>
       </main>
     </div>
   );
