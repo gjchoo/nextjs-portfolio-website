@@ -33,12 +33,12 @@ export const Footer = () => {
         get back to you!
       </p>
 
-      <div>
+      <div className="row">
         <a href={`mailto: ${emailAddress}` + emailContent}>
           <p
             className={[
               "fs18",
-              "regular",
+              "light",
               "secondary-color",
               "justify-center",
               "align-center",
@@ -49,9 +49,28 @@ export const Footer = () => {
             Say Hello
           </p>
         </a>
+
+        <a href="/resume">
+          <p
+            className={[
+              "fs18",
+              "light",
+              "secondary-color",
+              "justify-center",
+              "align-center",
+              styles.sayHello,
+              styles.centralisedText,
+            ].join(" ")}
+          >
+            View Resume
+          </p>
+        </a>
       </div>
 
-      <span className="mobile-only marginVertical-20">
+      <span
+        className="mobile-only"
+        style={{ paddingTop: 70, paddingBottom: 70 }}
+      >
         <SocialMedia />
       </span>
     </div>

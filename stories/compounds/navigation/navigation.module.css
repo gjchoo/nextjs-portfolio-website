@@ -113,7 +113,7 @@
   transition: all 0.5s;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.3s, opacity 0.3s linear;
   z-index: 999;
 }
 
@@ -126,8 +126,8 @@
   background-color: black;
   transition: all 0.5s;
   visibility: visible;
-  opacity: 0.85;
-  transition: visibility 0.5s, opacity 0.5s linear;
+  opacity: 0.9;
+  transition: visibility 0.3s, opacity 0.3s linear;
   z-index: 999;
 }
 

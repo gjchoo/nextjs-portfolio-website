@@ -173,7 +173,10 @@ export const Navigation = () => {
                   )
               )}
             </ol>
-            <div onClick={onMobileHamBurgerHandle}>
+            <div
+              onClick={onMobileHamBurgerHandle}
+              style={{ cursor: "pointer" }}
+            >
               <Text
                 className={styles.centralisedText}
                 text={"CANCEL".toUpperCase()}
