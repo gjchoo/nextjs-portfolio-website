@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import styles from "./experience.module.css";
 
 import { experienceList } from "../../../utils/constant";
+import { Text, SizeTypes, WeightTypes } from "../../atom/text/text";
 
 interface ExperienceListProps {
   company: string;
   title: string;
+  about: string;
   duration: string;
   highlights: string[];
 }
@@ -79,8 +81,8 @@ export const Experience = () => {
           `Before ${currentCompany}`}
       </p> */}
 
-      <div className="height100vh" style={{ position: "relative" }}>
-        <ul className="height100vh" style={{ position: "relative" }}>
+      <div className={styles.contentHeight}>
+        <ul className={styles.contentHeight}>
           {experienceList.map((e: ExperienceListProps) => {
             let animationType;
 
@@ -98,9 +100,14 @@ export const Experience = () => {
                   animationType,
                   "absolute-all",
                   "paddingVertical-20",
-                  "height100vh",
                 ].join(" ")}
               >
+                <Text
+                  className="paddingBottom-20"
+                  text={e.about}
+                  size={SizeTypes.fs18}
+                  weight={WeightTypes.light}
+                />
                 <span className="fs18 primary-color regular">{e.title}</span>
                 <span className="fs14 primary-color regular marginVertical-10">
                   {e.duration}

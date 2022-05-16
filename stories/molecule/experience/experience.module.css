@@ -43,3 +43,24 @@
   align-items: center;
   max-width: 441px;
 }
+
+@media only screen and (min-width: 768px) {
+  .contentHeight {
+    position: relative;
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contentHeight {
+    position: relative;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 520px) {
+  .contentHeight {
+    position: relative;
+    height: 70vh;
+  }
+}
