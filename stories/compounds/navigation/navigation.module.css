@@ -1,0 +1,11 @@
+.directionUp {
+  transform: translateY(-100px);
+  transition: transform 0.5s;
+  transition-delay: 0.5ms;
+}
+
+.directionDown {
+  transform: translateY(0px);
+  transition: transform 0.5s;
+  transition-delay: 0.5ms;
+}

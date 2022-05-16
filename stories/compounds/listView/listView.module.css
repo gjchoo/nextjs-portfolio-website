@@ -1,0 +1,25 @@
+.twoColumn {
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.listItem:before {
+  content: "• ";
+  color: #bebebe;
+  padding: 0px 10px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+.padding {
+  margin: 0px !important;
+}
+
+.maxWidth {
+  max-width: 420px;
+}
