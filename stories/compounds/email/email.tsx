@@ -4,7 +4,7 @@ import styles from "./email.module.css";
 
 import { Text, SizeTypes, WeightTypes } from "../../atom/text/text";
 
-import { emailAddress } from "../../../utils/constant";
+import { emailAddress, emailContent } from "../../../utils/constant";
 
 export interface EmailListItemProps {
   title: string;
@@ -17,7 +17,7 @@ export const Email = () => {
       className="desktop-email storybook-hover-icon "
     >
       <span className={styles.border} />
-      <a href={`mailto: ${emailAddress}`}>
+      <a href={`mailto: ${emailAddress}` + emailContent}>
         <Text
           className={`${styles.verticalText}`}
           text={emailAddress}

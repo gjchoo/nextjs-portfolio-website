@@ -7,6 +7,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 a {
@@ -43,7 +44,7 @@ p {
 }
 
 .height100vh {
-  height: 40vh;
+  height: 100vh;
 }
 
 .primary-color {
@@ -180,7 +181,7 @@ p {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.25s, opacity 0.25s linear;
-    background-color: black;
+    /* background-color: black; */
   }
 
   .social-media-desktop {
@@ -209,10 +210,11 @@ p {
 
   section {
     margin: 0px auto;
-    padding: 200px 100px 0px 100px;
+    padding: 150px 100px 0px 100px;
     max-width: 1000px;
     transition-delay: 0.25ms;
     transition: padding 0.25s;
+    width: 100%;
   }
 }
 
@@ -237,7 +239,7 @@ p {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.25s linear;
-    background-color: black;
+    /* background-color: black; */
   }
 
   .social-media-desktop {
@@ -273,11 +275,24 @@ p {
 
   section {
     margin: 0px auto;
-    padding: 200px 20px 0px 20px;
+    padding: 150px 20px 0px 20px;
     max-width: 1000px;
     transition-delay: 0.25ms;
     transition: padding 0.25s;
+    width: 100%;
   }
+}
+
+.paddingBottom-10 {
+  padding: 0px 0px 10px 0px;
+}
+
+.paddingBottom-20 {
+  padding: 0px 0px 20px 0px;
+}
+
+.paddingBottom-30 {
+  padding: 0px 0px 30px 0px;
 }
 
 .paddingHorizontal-10 {
@@ -286,6 +301,10 @@ p {
 
 .paddingHorizontal-20 {
   padding: 0px 20px;
+}
+
+.paddingHorizontal-30 {
+  padding: 0px 30px;
 }
 
 .paddingVertical-10 {
@@ -302,6 +321,11 @@ p {
 
 .padding-20 {
   padding: 20px;
+}
+
+.padding-margin-0 {
+  padding: 0;
+  margin: 0;
 }
 
 .paddingHorizontal-10-20 {
@@ -322,6 +346,18 @@ p {
 
 .marginVertical-20 {
   margin: 20px 0px;
+}
+
+.marginRight-10 {
+  margin: 0px 10px 0px 0px;
+}
+
+.marginRight-20 {
+  margin: 0px 20px 0px 0px;
+}
+
+.margin-0 {
+  margin: 0px;
 }
 
 .width-45 {

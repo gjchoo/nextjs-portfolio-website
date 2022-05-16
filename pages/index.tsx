@@ -10,6 +10,8 @@ import { Email } from "../stories/compounds/email/email";
 import { Introduction } from "../stories/molecule/introduction/introduction";
 import { AboutMyself } from "../stories/molecule/aboutMyself/aboutMyself";
 import { Experience } from "../stories/molecule/experience/experience";
+import { FeaturedProducts } from "../stories/molecule/featuredProducts/featuredProducts";
+import { Footer } from "../stories/molecule/footer/footer";
 
 const Home: NextPage = () => {
   return (
@@ -110,12 +112,16 @@ const Home: NextPage = () => {
           <AboutMyself />
         </section>
 
-        <section style={{ width: "100%" }}>
+        <section>
           <Experience />
         </section>
 
         <section>
-          <AboutMyself />
+          <FeaturedProducts />
+        </section>
+
+        <section>
+          <Footer />
         </section>
       </main>
     </div>

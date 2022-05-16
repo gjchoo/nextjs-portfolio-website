@@ -13,11 +13,11 @@ export interface ImgProps {
   /**
    * height of the img
    */
-  height: number;
+  height?: number;
   /**
    * width of the img
    */
-  width: number;
+  width?: number;
   /**
    * should add hover of the icon
    */
