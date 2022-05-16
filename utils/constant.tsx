@@ -113,7 +113,7 @@ export const experienceList = [
   },
   {
     company: "Bubbies Co",
-    title: "Mobile Software Engineer )",
+    title: "Mobile Software Engineer",
     about:
       "Bubbies Co is a dating app Startup, focused on making each couple story meaningful. It simplifies the process of meeting like-minded through love languages, intention and interests. Promoting online to offline interaction by suggesting places of interests based on the similarities between the users in their conversation windows.",
     duration: "Jan - Jul 2019",
@@ -161,6 +161,58 @@ export const experienceList = [
 ];
 
 export const featuredProductList = [
+  {
+    website: "https://www.memey.co",
+    source: "img source",
+    title: "Humour Connects - Easier than ever.",
+    subTitle:
+      "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
+    techList: [
+      "React Native",
+      "Node.js",
+      "Express",
+      "Cassendra DB",
+      "Firebase",
+    ],
+    // channels: [
+    //   {
+    //     icon: "/appStore.svg",
+    //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
+    //     alt: "memey app appstore",
+    //   },
+    //   {
+    //     icon: "./playStore.svg",
+    //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
+    //     alt: "memey app playstore",
+    //   },
+    // ],
+  },
+  {
+    website: "https://www.memey.co",
+    source: "img source",
+    title: "Humour Connects - Easier than ever.",
+    subTitle:
+      "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
+    techList: [
+      "React Native",
+      "Node.js",
+      "Express",
+      "Cassendra DB",
+      "Firebase",
+    ],
+    // channels: [
+    //   {
+    //     icon: "/appStore.svg",
+    //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
+    //     alt: "memey app appstore",
+    //   },
+    //   {
+    //     icon: "./playStore.svg",
+    //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
+    //     alt: "memey app playstore",
+    //   },
+    // ],
+  },
   {
     website: "https://www.memey.co",
     source: "img source",
