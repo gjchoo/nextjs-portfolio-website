@@ -14,14 +14,14 @@ interface ExperienceListProps {
 }
 
 export const Experience = () => {
-  const [index, setIndex] = useState("0");
+  // const [index, setIndex] = useState("0");
   const [currentCompany, SetCurrentCompany] = useState(
     experienceList[0].company
   );
 
   const onSelectIndex = (event: React.MouseEvent<HTMLDivElement>) => {
     SetCurrentCompany(event.currentTarget.id);
-    setIndex(event.currentTarget.title);
+    // setIndex(event.currentTarget.title);
     // const scrollTab = document.getElementById("scrollTab");
     // if (null != scrollTab) {
     //   const left = document.getElementById(currentCompany)?.offsetLeft;
@@ -36,7 +36,7 @@ export const Experience = () => {
     <div
       id="profile-section"
       data-testid="storybook-experience"
-      className="paddingVertical-20"
+      className="paddingTop70"
     >
       <h2>
         <span className="regular fs18 secondary-color">02: </span>
@@ -53,7 +53,7 @@ export const Experience = () => {
                 className={styles.experienceContainer}
                 onClick={onSelectIndex}
                 id={e.company}
-                title={`${index}`}
+                title={e.company}
               >
                 <p
                   className={[
@@ -81,54 +81,52 @@ export const Experience = () => {
           `Before ${currentCompany}`}
       </p> */}
 
-      <div className={styles.contentHeight}>
-        <ul className={styles.contentHeight}>
-          {experienceList.map((e: ExperienceListProps) => {
-            let animationType;
+      <ul className={styles.contentHeight}>
+        {experienceList.map((e: ExperienceListProps) => {
+          let animationType;
 
-            if (isCurrentCompany(e.company)) {
-              animationType = "fadeIn";
-            } else {
-              animationType = "fadeOut";
-            }
+          if (isCurrentCompany(e.company)) {
+            animationType = "fadeIn";
+          } else {
+            animationType = "fadeOut";
+          }
 
-            return (
-              <div
-                key={e.duration}
-                className={[
-                  "column",
-                  animationType,
-                  "absolute-all",
-                  "paddingVertical-20",
-                ].join(" ")}
-              >
-                <Text
-                  className="paddingBottom-20"
-                  text={e.about}
-                  size={SizeTypes.fs18}
-                  weight={WeightTypes.light}
-                />
-                <span className="fs18 primary-color regular">{e.title}</span>
-                <span className="fs14 primary-color regular marginVertical-10">
-                  {e.duration}
-                </span>
-                <ul className={styles.oneColumn}>
-                  {e.highlights.map((e) => (
-                    <li key={e} className={styles.listItem}>
-                      <p
-                        className="fs18 secondary-color light marginVertical-10 storybook-hover-icon"
-                        style={{ whiteSpace: "pre-wrap" }}
-                      >
-                        {e}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
-        </ul>
-      </div>
+          return (
+            <div
+              key={e.duration}
+              className={[
+                "column",
+                animationType,
+                "absolute-all",
+                "paddingVertical-20",
+              ].join(" ")}
+            >
+              <Text
+                className="paddingBottom-20"
+                text={e.about}
+                size={SizeTypes.fs18}
+                weight={WeightTypes.light}
+              />
+              <span className="fs18 primary-color regular">{e.title}</span>
+              <span className="fs14 primary-color regular marginVertical-10">
+                {e.duration}
+              </span>
+              <ul className={styles.oneColumn}>
+                {e.highlights.map((e) => (
+                  <li key={e} className={styles.listItem}>
+                    <p
+                      className="fs18 secondary-color light marginVertical-10 storybook-hover-icon"
+                      style={{ whiteSpace: "pre-wrap" }}
+                    >
+                      {e}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </ul>
     </div>
   );
 };

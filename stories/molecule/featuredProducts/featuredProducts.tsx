@@ -26,7 +26,7 @@ export const FeaturedProducts = () => {
     <div
       id="work-section"
       data-testid="storybook-feature-products"
-      className="paddingVertical-20"
+      className="paddingTop70"
     >
       <h2>
         <span className="regular fs18 secondary-color">03: </span>

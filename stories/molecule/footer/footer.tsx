@@ -12,7 +12,7 @@ export const Footer = () => {
     <div
       id="contact-section"
       data-testid="storybook-about-myself"
-      className="column justify-center align-center"
+      className="column justify-center align-center paddingTop70"
     >
       <h2>
         <span className="regular fs18 secondary-color">04: </span>

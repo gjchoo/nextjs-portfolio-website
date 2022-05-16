@@ -10,7 +10,7 @@ export const AboutMyself = ({}: AboutMyselfProps) => {
     <div
       id="about-section"
       data-testid="storybook-about-myself"
-      className="paddingVertical-20"
+      className="paddingTop70"
     >
       <h2>
         <span className="regular fs18 secondary-color">01: </span>
@@ -26,8 +26,13 @@ export const AboutMyself = ({}: AboutMyselfProps) => {
 
       <p className={`light fs18 secondary-color`}>
         Over the years, I have had the privilege to work with a{" "}
-        <span className="regular primary-color">retail tech startup</span>,{" "}
-        <span className="regular primary-color">an advertising agency</span> and{" "}
+        <a href="https://eyos.one" target="_blank" rel="noreferrer">
+          <span className="regular primary-color">retail tech startup</span>,{" "}
+        </a>
+        <a href="https://ocdigitalnetwork.com" target="_blank" rel="noreferrer">
+          <span className="regular primary-color">an advertising agency</span>{" "}
+          and{" "}
+        </a>
         <span className="regular primary-color">few startups</span>. My focus
         these days is to learn and build scalable and inclusive digital
         experiences at <span className="regular primary-color">IBM</span>.

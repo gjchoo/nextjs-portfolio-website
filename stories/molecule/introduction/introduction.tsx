@@ -9,7 +9,7 @@ export const Introduction = ({}: IntroductionProps) => {
     <div
       id="introduction"
       data-testid="storybook-introduction"
-      className="paddingVertical-20"
+      className="paddingTop70"
     >
       <h1 className="regular fs14 primary-color">Hey, my name is</h1>
       <h2 className="semibold fs60 marginVertical-10 primary-color">
@@ -25,7 +25,9 @@ export const Introduction = ({}: IntroductionProps) => {
         developing great & meaningful digital products. Currently I am
         collaborating with a team of designers and software engineers to develop
         humancentric products at{" "}
-        <span className="medium primary-color">IBM</span>.
+        <a href="https://www.ibm.com/sg-en" target="_blank" rel="noreferrer">
+          <span className="medium primary-color underline">IBM</span>.
+        </a>
       </p>
     </div>
   );

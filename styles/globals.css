@@ -35,6 +35,11 @@ p {
   line-height: 29px;
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+}
+
 .absolute-all {
   position: absolute;
   top: 0;
@@ -265,6 +270,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 99999999;
   }
 
   .mobile-only {
@@ -313,6 +319,10 @@ p {
 
 .paddingVertical-20 {
   padding: 20px 0px;
+}
+
+.paddingTop70 {
+  padding: 70px 0px 0px 0px;
 }
 
 .padding-10 {

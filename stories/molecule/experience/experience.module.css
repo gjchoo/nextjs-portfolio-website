@@ -1,6 +1,9 @@
+.experienceRow::-webkit-scrollbar {
+  display: none;
+}
+
 .experienceRow {
   display: flex;
-  position: relative;
   flex-direction: row;
 
   overflow-x: scroll;
@@ -23,6 +26,10 @@
 
 .experienceDecorator {
   text-decoration: underline white 1.5px;
+  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+  text-decoration-color: white;
+  -webkit-text-decoration-color: white;
 }
 
 .oneColumn {
