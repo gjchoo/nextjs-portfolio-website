@@ -213,30 +213,30 @@ export const featuredProductList = [
     //   },
     // ],
   },
-  {
-    website: "https://www.memey.co",
-    source: "img source",
-    title: "Humour Connects - Easier than ever.",
-    subTitle:
-      "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
-    techList: [
-      "React Native",
-      "Node.js",
-      "Express",
-      "Cassendra DB",
-      "Firebase",
-    ],
-    // channels: [
-    //   {
-    //     icon: "/appStore.svg",
-    //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
-    //     alt: "memey app appstore",
-    //   },
-    //   {
-    //     icon: "./playStore.svg",
-    //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
-    //     alt: "memey app playstore",
-    //   },
-    // ],
-  },
+  // {
+  //   website: "https://www.memey.co",
+  //   source: "img source",
+  //   title: "Humour Connects - Easier than ever.",
+  //   subTitle:
+  //     "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
+  //   techList: [
+  //     "React Native",
+  //     "Node.js",
+  //     "Express",
+  //     "Cassendra DB",
+  //     "Firebase",
+  //   ],
+  // channels: [
+  //   {
+  //     icon: "/appStore.svg",
+  //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
+  //     alt: "memey app appstore",
+  //   },
+  //   {
+  //     icon: "./playStore.svg",
+  //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
+  //     alt: "memey app playstore",
+  //   },
+  // ],
+  // },
 ];

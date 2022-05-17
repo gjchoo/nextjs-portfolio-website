@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import styles from "../styles/Home.module.css";
-
 import { Navigation } from "../stories/compounds/navigation/navigation";
 import { SocialMedia } from "../stories/compounds/socialMedia/socialMedia";
 import { Email } from "../stories/compounds/email/email";
@@ -98,7 +96,7 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <main className={styles.main}>
+      <main>
         <Navigation />
 
         <SocialMedia orientation="vertical" />
