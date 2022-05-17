@@ -12,7 +12,7 @@ export const Footer = () => {
     <div
       id="contact-section"
       data-testid="storybook-about-myself"
-      className="column justify-center align-center paddingTop70"
+      className="column justify-center align-center"
     >
       <h2>
         <span className="regular fs18 secondary-color">04: </span>
@@ -33,8 +33,8 @@ export const Footer = () => {
         get back to you!
       </p>
 
-      <div className="row">
-        <a href={`mailto: ${emailAddress}` + emailContent}>
+      <div className="column">
+        {/* <a href={`mailto: ${emailAddress}` + emailContent}>
           <p
             className={[
               "fs18",
@@ -48,9 +48,9 @@ export const Footer = () => {
           >
             Say Hello
           </p>
-        </a>
+        </a> */}
 
-        <a href="/resume">
+        <a href="/resume" className="marginVertical-20">
           <p
             className={[
               "fs18",
@@ -59,6 +59,7 @@ export const Footer = () => {
               "justify-center",
               "align-center",
               styles.sayHello,
+              // "storybook-hover-icon",
               styles.centralisedText,
             ].join(" ")}
           >

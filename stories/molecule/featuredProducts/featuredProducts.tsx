@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "./featuredProducts.module.css";
 
@@ -28,7 +28,7 @@ export const FeaturedProducts = () => {
       data-testid="storybook-feature-products"
       className="paddingTop70"
     >
-      <h2>
+      <h2 style={{ marginBottom: 50 }}>
         <span className="regular fs18 secondary-color">03: </span>
         <span className="regular fs24 primary-color">
           Some Of My Notable Works
@@ -37,16 +37,24 @@ export const FeaturedProducts = () => {
 
       <ul>
         {featuredProductList.map((e: FeaturedProductsProps) => (
-          <li key={e.title}>
+          <li className="item" key={e.title}>
             <div className={styles.contentDirection}>
-              <div
+              {/* <div
                 className={styles.featureProductImg}
                 style={{ backgroundColor: "grey" }}
+              /> */}
+              {/* <div> */}
+              <img
+                className={styles.featureProductImg}
+                src={e.source}
+                alt={e.title}
               />
+              {/* </div> */}
+
               <div className={styles.featureProductContent}>
                 {e.website ? (
                   <a href={e.website} target="_blank" rel="noreferrer">
-                    <h3 className="fs48 medium primary-color padding-margin-0">
+                    <h3 className="fs38 medium primary-color padding-margin-0">
                       {e.title}
                     </h3>
                   </a>
@@ -56,9 +64,9 @@ export const FeaturedProducts = () => {
                   </h3>
                 )}
 
-                <p className={`regular fs18 secondary-color`}>{e.subTitle}</p>
+                <p className={`regular fs14 secondary-color`}>{e.subTitle}</p>
 
-                <p className={`regular fs14 primary-color`}>
+                <p className={`light fs14 primary-color`}>
                   {e.techList.join(", ")}
                 </p>
 

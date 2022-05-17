@@ -165,7 +165,7 @@ export const Navigation = () => {
                             text={e.title.toUpperCase()}
                             size={SizeTypes.fs18}
                             weight={WeightTypes.regular}
-                            color="primary"
+                            color="primary-color"
                           />
                         </a>
                       </Link>
@@ -182,7 +182,7 @@ export const Navigation = () => {
                 text={"CANCEL".toUpperCase()}
                 size={SizeTypes.fs18}
                 weight={WeightTypes.regular}
-                color="primary"
+                color="primary-color"
               />
             </div>
           </div>

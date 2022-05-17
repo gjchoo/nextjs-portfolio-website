@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 200px 0px;
   }
 
   .featureProductContent {
@@ -30,8 +30,10 @@
   }
 
   .featureProductImg {
-    height: 440px;
+    max-height: 440px;
     width: 380px;
+    object-fit: contain;
+    transition: all 0.5s;
   }
 }
 
@@ -52,7 +54,9 @@
   }
 
   .featureProductImg {
-    height: 320px;
-    width: 65%;
+    max-height: 320px;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
   }
 }

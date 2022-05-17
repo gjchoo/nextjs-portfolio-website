@@ -163,10 +163,10 @@ export const experienceList = [
 export const featuredProductList = [
   {
     website: "https://www.memey.co",
-    source: "img source",
+    source: "/memey.png",
     title: "Humour Connects - Easier than ever.",
     subTitle:
-      "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
+      "Memey is a Meme-Based Dating app that focuses on connecting people through humor. It helps to connect like-minded couples through humour, instead of swipping profiles the user swipe memes.",
     techList: [
       "React Native",
       "Node.js",
@@ -174,44 +174,14 @@ export const featuredProductList = [
       "Cassendra DB",
       "Firebase",
     ],
-    // channels: [
-    //   {
-    //     icon: "/appStore.svg",
-    //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
-    //     alt: "memey app appstore",
-    //   },
-    //   {
-    //     icon: "./playStore.svg",
-    //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
-    //     alt: "memey app playstore",
-    //   },
-    // ],
   },
   {
-    website: "https://www.memey.co",
-    source: "img source",
-    title: "Humour Connects - Easier than ever.",
+    website: "https://housedownstairs.com",
+    source: "/hds.png",
+    title: "Don't starve, just order",
     subTitle:
-      "Minimalistic dating app using memes, filters the liked-minded so you can focus on the essentials.",
-    techList: [
-      "React Native",
-      "Node.js",
-      "Express",
-      "Cassendra DB",
-      "Firebase",
-    ],
-    // channels: [
-    //   {
-    //     icon: "/appStore.svg",
-    //     url: "https://apps.apple.com/us/app/memey-meme-based-dating/id1590717708",
-    //     alt: "memey app appstore",
-    //   },
-    //   {
-    //     icon: "./playStore.svg",
-    //     url: "https://play.google.com/store/apps/details?id=com.memey.production",
-    //     alt: "memey app playstore",
-    //   },
-    // ],
+      "House Downstairs is a specialty cafe in Singapore located at Ulu Pandan Community Club. When Singapore Government announced Covid-19 lockdown, I was tasked to develop a full ecommerce responsive website using Next.js and Node.js.",
+    techList: ["React.js", "Next.js", "Node.js", "Express"],
   },
   // {
   //   website: "https://www.memey.co",

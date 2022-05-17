@@ -102,23 +102,26 @@ const Home: NextPage = () => {
         <SocialMedia orientation="vertical" />
         <Email />
 
-        <section>
+        <section className="main-section">
           <Introduction />
         </section>
 
-        <section>
+        <section className="main-section">
           <AboutMyself />
         </section>
 
-        <section>
+        <section className="main-section">
           <Experience />
         </section>
 
-        <section>
+        <section className="main-section">
           <FeaturedProducts />
         </section>
 
-        <section>
+        <section
+          className="main-section"
+          style={{ paddingTop: 50, paddingBottom: 0 }}
+        >
           <Footer />
         </section>
       </main>

@@ -111,6 +111,10 @@ p {
   font-size: 3rem;
 }
 
+.fs38 {
+  font-size: 2.375rem;
+}
+
 .fs24 {
   font-size: 1.5rem;
 }
@@ -216,7 +220,7 @@ p {
     transition: visibility 0.25s, opacity 0.25s linear;
   }
 
-  section {
+  .main-section {
     margin: 0px auto;
     padding: 150px 100px 0px 100px;
     max-width: 1000px;
@@ -282,7 +286,7 @@ p {
     transition: visibility 0s, opacity 0.25s linear;
   }
 
-  section {
+  .main-section {
     margin: 0px auto;
     padding: 150px 20px 0px 20px;
     max-width: 1000px;
@@ -379,4 +383,11 @@ p {
 
 .full-width {
   width: 100%;
+}
+
+.containerGSAP {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
