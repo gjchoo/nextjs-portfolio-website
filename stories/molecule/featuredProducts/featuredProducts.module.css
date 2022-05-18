@@ -13,7 +13,7 @@
   margin-right: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 955px) {
   .contentDirection {
     display: flex;
     flex-direction: row;
@@ -26,18 +26,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 0 0 40px;
   }
 
   .featureProductImg {
     max-height: 440px;
-    width: 380px;
+    width: 480px;
     object-fit: contain;
     transition: all 0.5s;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 954px) {
   .contentDirection {
     display: flex;
     flex-direction: column;

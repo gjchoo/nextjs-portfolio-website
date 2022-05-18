@@ -11,6 +11,7 @@ interface ExperienceListProps {
   about: string;
   duration: string;
   highlights: string[];
+  logo: string;
 }
 
 export const Experience = () => {
@@ -123,6 +124,24 @@ export const Experience = () => {
                   </li>
                 ))}
               </ul>
+
+              {e.logo && (
+                <div
+                  className={styles.showLogo}
+                  style={{
+                    position: "absolute",
+                    bottom: "25%",
+                    right: "10%",
+                  }}
+                >
+                  <img
+                    className={styles.featureProductImg}
+                    src={e.logo}
+                    alt={e.title}
+                    width={110}
+                  />
+                </div>
+              )}
             </div>
           );
         })}

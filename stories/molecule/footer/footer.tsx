@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 import { SocialMedia } from "../../compounds/socialMedia/socialMedia";
@@ -50,7 +50,7 @@ export const Footer = () => {
           </p>
         </a> */}
 
-        <a href="/resume" className="marginVertical-20">
+        <Link href="/resume" className="marginVertical-20">
           <p
             className={[
               "fs18",
@@ -65,7 +65,7 @@ export const Footer = () => {
           >
             View Resume
           </p>
-        </a>
+        </Link>
       </div>
 
       <span
