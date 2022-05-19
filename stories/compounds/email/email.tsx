@@ -12,19 +12,21 @@ export interface EmailListItemProps {
 
 export const Email = () => {
   return (
-    <div
-      data-testid="storybook-email"
-      className="desktop-email storybook-hover-icon "
-    >
-      <span className={styles.border} />
-      <a href={`mailto: ${emailAddress}` + emailContent}>
-        <Text
-          className={`${styles.verticalText}`}
-          text={emailAddress}
-          size={SizeTypes.fs18}
-          weight={WeightTypes.light}
-        />
-      </a>
+    <div className="opacityAnimation">
+      <div
+        data-testid="storybook-email"
+        className="desktop-email storybook-hover-icon"
+      >
+        <span className={styles.border} />
+        <a href={`mailto: ${emailAddress}` + emailContent}>
+          <Text
+            className={`${styles.verticalText}`}
+            text={emailAddress}
+            size={SizeTypes.fs18}
+            weight={WeightTypes.light}
+          />
+        </a>
+      </div>
     </div>
   );
 };

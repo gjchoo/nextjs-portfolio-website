@@ -19,12 +19,12 @@ export const SocialMedia = ({
   orientation = "horizontal",
 }: SocialMediaProps) => {
   return (
-    <div data-testid="storybook-social-media">
+    <div data-testid="storybook-social-media" className="opacityAnimation">
       <ul
         className={`${
           orientation === "horizontal"
             ? "row"
-            : "column width-45 after-border social-media-desktop"
+            : "column width-45 after-border social-media-desktop "
         }`}
       >
         {socialMedia.map((e: SocialMediaListProps) =>

@@ -103,48 +103,53 @@ export const Navigation = () => {
           </ol>
         </div>
 
-        <div
-          className={`${
-            isMobile
-              ? downDirection
-                ? styles.directionDown
-                : styles.directionUp
-              : ""
-          }`}
-        >
+        <div className="mobileAnimation">
           <div
-            ref={moileNavigation}
-            className={[
-              `row justify-between align-center mobile-nav-bar`,
-              styles.hamBurgerContainer,
-            ].join(" ")}
+            className={`${
+              isMobile
+                ? downDirection
+                  ? styles.directionDown
+                  : styles.directionUp
+                : ""
+            }`}
           >
-            <Link href={navigationList[2].url}>
-              <a className="storybook-hover-icon">
-                <Img
-                  src={mainIcon}
-                  width={navIconSize}
-                  height={navIconSize}
-                  alt={imgGenericAlt}
-                />
-              </a>
-            </Link>
-
             <div
-              onClick={onMobileHamBurgerHandle}
-              className={["storybook-hover-icon", styles.hamBurgerContent].join(
-                " "
-              )}
+              ref={moileNavigation}
+              className={[
+                `row justify-between align-center mobile-nav-bar`,
+                styles.hamBurgerContainer,
+              ].join(" ")}
             >
+              <Link href={navigationList[2].url}>
+                <a className="storybook-hover-icon">
+                  <Img
+                    src={mainIcon}
+                    width={navIconSize}
+                    height={navIconSize}
+                    alt={imgGenericAlt}
+                  />
+                </a>
+              </Link>
+
               <div
-                className={mobileMenu ? styles.barOneActive : styles.barOne}
-              />
-              <div
-                className={mobileMenu ? styles.barTwoActive : styles.barTwo}
-              />
-              <div
-                className={mobileMenu ? styles.barThreeActive : styles.barThree}
-              />
+                onClick={onMobileHamBurgerHandle}
+                className={[
+                  "storybook-hover-icon",
+                  styles.hamBurgerContent,
+                ].join(" ")}
+              >
+                <div
+                  className={mobileMenu ? styles.barOneActive : styles.barOne}
+                />
+                <div
+                  className={mobileMenu ? styles.barTwoActive : styles.barTwo}
+                />
+                <div
+                  className={
+                    mobileMenu ? styles.barThreeActive : styles.barThree
+                  }
+                />
+              </div>
             </div>
           </div>
         </div>
