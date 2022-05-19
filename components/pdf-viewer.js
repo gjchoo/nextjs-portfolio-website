@@ -18,9 +18,6 @@ export default function PDFViewer() {
     <div
       style={{
         backgroundColor: "white",
-        display: "flex",
-        width: "100%",
-        justifyContent: "center",
       }}
     >
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
