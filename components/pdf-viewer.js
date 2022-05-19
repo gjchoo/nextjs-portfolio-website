@@ -15,11 +15,7 @@ export default function PDFViewer() {
   }
 
   return (
-    <div
-      style={{
-        backgroundColor: "white",
-      }}
-    >
+    <div className="pdf-viewer">
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
         {Array.from({ length: numPages }, (_, index) => (
           <Page
