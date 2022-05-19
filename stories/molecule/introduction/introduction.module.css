@@ -1,3 +1,67 @@
 .maxWidth434 {
   max-width: 434px;
 }
+
+@keyframes entry {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+.introduction > h1 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 500ms;
+  animation-delay: 800ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translate(0, 50px);
+}
+
+.introduction > h2 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 500ms;
+  animation-delay: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translate(0, 50px);
+}
+
+.introduction > h3 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 500ms;
+  animation-delay: 1200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translate(0, 50px);
+}
+
+.introduction > p {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 500ms;
+  animation-delay: 1500ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translate(0, 50px);
+}

@@ -9,7 +9,7 @@ export const Introduction = ({}: IntroductionProps) => {
     <div
       id="introduction"
       data-testid="storybook-introduction"
-      className="paddingTop70"
+      className={["paddingTop70", styles.introduction].join(" ")}
     >
       <h1 className="regular fs14 primary-color">Hey, my name is</h1>
       <h2 className="semibold fs60 marginVertical-10 primary-color">
