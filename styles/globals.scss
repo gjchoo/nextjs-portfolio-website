@@ -1,4 +1,5 @@
-@import "./variables";
+@import "./_variables";
+@import "./animation";
 
 html,
 body {
@@ -42,6 +43,10 @@ p {
   text-underline-offset: 3.5px;
 }
 
+.bgcolor {
+  background-color: #0a0b0b;
+}
+
 .absolute-all {
   position: absolute;
   top: 0;
@@ -52,6 +57,10 @@ p {
 
 .height100vh {
   height: 100vh;
+}
+
+.width100vw {
+  width: 100vw;
 }
 
 .primary-color {
@@ -195,7 +204,10 @@ p {
     height: 100px;
     padding: 0px 20px;
     width: 768px;
-    display: flex;
+
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.25s, opacity 0.25s linear;
   }
 
   .mobile-nav-bar {
@@ -235,6 +247,12 @@ p {
     transition: visibility 0.25s, opacity 0.25s linear;
   }
 
+  .desktop-only {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.2s linear;
+  }
+
   .main-section {
     margin: 0px auto;
     padding: 150px 100px 0px 100px;
@@ -246,14 +264,23 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .desktop-only {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+  }
+
   .desktop-nav-bar {
     position: absolute;
     top: 0;
     display: flex;
     height: 100px;
     padding: 0px 20px;
-    width: 768px;
-    display: none;
+    max-width: 768px;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
   }
 
   .mobile-nav-bar {

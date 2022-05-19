@@ -9,7 +9,6 @@ import { Img } from "../../atom/img/img";
 
 import {
   navIconSize,
-  hamBurger,
   mainIcon,
   navigationList,
   imgGenericAlt,
@@ -80,7 +79,7 @@ export const Navigation = () => {
         <div className="justify-center">
           <ol className="row justify-between align-center desktop-nav-bar">
             {navigationList.map((e: NavListItemProps) => (
-              <li key={e.title}>
+              <li className="desktopNavigationLi" key={e.title}>
                 <Link href={e.url}>
                   <a className="storybook-hover-icon">
                     {!e.icon ? (
@@ -94,7 +93,7 @@ export const Navigation = () => {
                         src={e.path || ""}
                         width={navIconSize}
                         height={navIconSize}
-                        alt="Singapore Software Engineer GJCHOO"
+                        alt="Singapore Software Engineer gjchoo"
                       />
                     )}
                   </a>

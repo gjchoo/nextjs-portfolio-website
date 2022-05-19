@@ -138,7 +138,7 @@ export const Experience = () => {
                     className={styles.featureProductImg}
                     src={e.logo}
                     alt={e.title}
-                    width={110}
+                    width={90}
                   />
                 </div>
               )}

@@ -12,6 +12,7 @@ import { FeaturedProducts } from "../stories/molecule/featuredProducts/featuredP
 import { Footer } from "../stories/molecule/footer/footer";
 
 const Home: NextPage = () => {
+  const newLocal = "https://www.gjchoo.com";
   return (
     <div>
       <Head>
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
         </title>
         <meta
           name="description"
-          content="I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
+          content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
         />
         <meta
           name="image"
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         <meta
           name="twitter:creator"
           content={
-            "I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
+            "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
           }
           key="twhandle"
         />
@@ -45,11 +46,7 @@ const Home: NextPage = () => {
           key="ogurl"
         />
         <meta property="og:image" content={"/gjchoo.png"} key="ogimage" />
-        <meta
-          property="og:site_name"
-          content={"https://www.gjchoo.com"}
-          key="ogsitename"
-        />
+        <meta property="og:site_name" content={newLocal} key="ogsitename" />
         <meta
           property="og:title"
           content={
@@ -60,7 +57,7 @@ const Home: NextPage = () => {
         <meta
           property="og:description"
           content={
-            "I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
+            "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
           }
           key="ogdesc"
         />

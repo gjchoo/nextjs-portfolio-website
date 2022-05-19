@@ -10,14 +10,26 @@ export default function PDFViewer() {
   const [file] = useState("./resume_gjchoo.pdf");
   const [numPages, setNumPages] = useState(null);
 
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
+  function onDocumentLoadSuccess({ numPages }: any) {
+    setNumPages(numPages);
   }
 
   return (
     <div className="pdf-viewer">
-      <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-        {Array.from({ length: numPages }, (_, index) => (
+      <Document
+        file={file}
+        onLoadSuccess={onDocumentLoadSuccess}
+        loading={
+          <div
+            style={{
+              backgroundColor: "white",
+              height: "100vh",
+              width: "100vw",
+            }}
+          />
+        }
+      >
+        {Array.from([numPages], (_, index) => (
           <Page
             key={`page_${index + 1}`}
             pageNumber={index + 1}
