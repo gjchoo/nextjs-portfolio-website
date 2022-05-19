@@ -22,6 +22,48 @@ const Home: NextPage = () => {
           name="description"
           content="I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
         />
+        <meta
+          name="image"
+          content="/gjchoo.png"
+          data-react-helmet="true"
+        ></meta>
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta
+          name="twitter:creator"
+          content={
+            "I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
+          }
+          key="twhandle"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:url"
+          content={"https://www.gjchoo.com"}
+          key="ogurl"
+        />
+        <meta property="og:image" content={"/gjchoo.png"} key="ogimage" />
+        <meta
+          property="og:site_name"
+          content={"https://www.gjchoo.com"}
+          key="ogsitename"
+        />
+        <meta
+          property="og:title"
+          content={
+            "Gian Jie - A Software Engineer Who Loves To Develop Web And Mobile App"
+          }
+          key="ogtitle"
+        />
+        <meta
+          property="og:description"
+          content={
+            "I am a Singapore-based software engineer who’s passionate about developing great & meaningful digital products."
+          }
+          key="ogdesc"
+        />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
