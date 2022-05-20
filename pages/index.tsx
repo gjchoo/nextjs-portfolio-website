@@ -23,11 +23,7 @@ const Home: NextPage = () => {
           name="description"
           content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
         />
-        <meta
-          name="image"
-          content="/gjchoo.png"
-          data-react-helmet="true"
-        ></meta>
+        <meta name="image" content="/gjchoo.png"></meta>
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />

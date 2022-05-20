@@ -16,17 +16,34 @@
   }
 }
 
-.logo-entry {
-  animation-name: entry, opacity;
-  animation-duration: 2000ms, 250ms;
-  animation-delay: 0ms, 2000ms; /* add this */
-  animation-timing-function: ease-out, ease-out;
-  animation-iteration-count: 1, 1;
+@media only screen and (max-width: 767px) {
+  .logo-entry {
+    animation-name: entry, opacity;
+    animation-duration: 2000ms, 250ms;
+    animation-delay: 0ms, 2000ms; /* add this */
+    animation-timing-function: ease-out, ease-out;
+    animation-iteration-count: 1, 1;
 
-  animation-fill-mode: forwards;
-  position: absolute;
-  top: 45%;
-  left: 45%;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-entry {
+    animation-name: entry, opacity;
+    animation-duration: 2000ms, 250ms;
+    animation-delay: 0ms, 2000ms; /* add this */
+    animation-timing-function: ease-out, ease-out;
+    animation-iteration-count: 1, 1;
+
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+  }
 }
 
 .desktopNavigationLi:nth-child(1) {

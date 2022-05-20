@@ -10,6 +10,7 @@ const Index = () => {
         height={navIconSize * 2}
         width={navIconSize * 2}
         layout="fixed"
+        alt="singapore software engineer portfolio gjchoo"
       />
     </div>
   );
