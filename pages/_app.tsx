@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(!loading), 3200);
+    setTimeout(() => setLoading(!loading), 2500);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
