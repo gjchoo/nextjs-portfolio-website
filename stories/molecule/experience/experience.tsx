@@ -113,13 +113,13 @@ export const Experience = () => {
                 {e.duration}
               </span>
               <ul className={styles.oneColumn}>
-                {e.highlights.map((e) => (
-                  <li key={e} className={styles.listItem}>
+                {e.highlights.map((text: string, index: number) => (
+                  <li key={index} className={styles.listItem}>
                     <p
                       className="fs18 secondary-color light marginVertical-10 storybook-hover-icon"
                       style={{ whiteSpace: "pre-wrap" }}
                     >
-                      {e}
+                      {text}
                     </p>
                   </li>
                 ))}

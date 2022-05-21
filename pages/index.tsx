@@ -140,30 +140,6 @@ const Home: NextPage = () => {
         <link
           rel="icon"
           type="image/png"
-          sizes="48x48"
-          href="/icons/android-icon-48x48.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="72x72"
-          href="/icons/android-icon-72x72.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/icons/android-icon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="144x144"
-          href="/icons/android-icon-144x144.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
           sizes="192x192"
           href="/icons/android-icon-192x192.png"
         />

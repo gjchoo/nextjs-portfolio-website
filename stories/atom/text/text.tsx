@@ -57,7 +57,7 @@ export const Text = ({
   return (
     <p
       data-testid="storybook-p"
-      className={[text, weight, size, color, className].join(" ")}
+      className={[weight, size, color, className].join(" ")}
       style={{ lineHeight: `${lineHeight}px`, color }}
     >
       {text}
