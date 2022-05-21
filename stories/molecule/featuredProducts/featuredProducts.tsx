@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import styles from "./featuredProducts.module.css";
 
 import { featuredProductList } from "../../../utils/constant";
-import { Img } from "../../atom/img/img";
+import Img from "next/image";
 
 interface ChannelsProps {
   icon: string;
@@ -39,17 +39,13 @@ export const FeaturedProducts = () => {
         {featuredProductList.map((e: FeaturedProductsProps) => (
           <li className="item" key={e.title}>
             <div className={styles.contentDirection}>
-              {/* <div
-                className={styles.featureProductImg}
-                style={{ backgroundColor: "grey" }}
-              /> */}
-              {/* <div> */}
               <img
                 className={styles.featureProductImg}
                 src={e.source}
                 alt={e.title}
+                height={"100%"}
+                width={"100%"}
               />
-              {/* </div> */}
 
               <div className={styles.featureProductContent}>
                 {e.website ? (
@@ -64,7 +60,7 @@ export const FeaturedProducts = () => {
                   </h3>
                 )}
 
-                <p className={`regular fs14 secondary-color`}>{e.subTitle}</p>
+                <p className={`light fs18 secondary-color`}>{e.subTitle}</p>
 
                 <p className={`light fs14 primary-color`}>
                   {e.techList.join(", ")}

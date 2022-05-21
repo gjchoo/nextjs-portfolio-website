@@ -139,6 +139,7 @@ export const Experience = () => {
                     src={e.logo}
                     alt={e.title}
                     width={90}
+                    height={"100%"}
                   />
                 </div>
               )}

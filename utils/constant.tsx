@@ -170,7 +170,7 @@ export const experienceList = [
 export const featuredProductList = [
   {
     website: "https://www.memey.co",
-    source: "/memey.png",
+    source: "/memey.webp",
     title: "Humour Connects - Easier than ever.",
     subTitle:
       "Memey is a Meme-Based Dating app that focuses on connecting people through humor. It helps to connect like-minded couples through humour, instead of swipping profiles the user swipe memes.",
@@ -184,7 +184,7 @@ export const featuredProductList = [
   },
   {
     website: "https://housedownstairs.com",
-    source: "/hds.png",
+    source: "/hds.webp",
     title: "Don't starve, just order",
     subTitle:
       "House Downstairs is a specialty cafe in Singapore located at Ulu Pandan Community Club. When Singapore Government announced Covid-19 lockdown, I was tasked to develop a full ecommerce responsive website using Next.js and Node.js.",
