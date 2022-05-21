@@ -102,3 +102,24 @@
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+.animateAllChildActive > * {
+  animation-name: slideUp;
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translate(0, 100px);
+}

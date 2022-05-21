@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import { useEffect } from "react";
+
 import { Navigation } from "../stories/compounds/navigation/navigation";
 import { SocialMedia } from "../stories/compounds/socialMedia/socialMedia";
 import { Email } from "../stories/compounds/email/email";
@@ -11,8 +13,34 @@ import { Experience } from "../stories/molecule/experience/experience";
 import { FeaturedProducts } from "../stories/molecule/featuredProducts/featuredProducts";
 import { Footer } from "../stories/molecule/footer/footer";
 
+const newLocal = "https://www.gjchoo.com";
+
 const Home: NextPage = () => {
-  const newLocal = "https://www.gjchoo.com";
+  useEffect(() => {
+    const animation = () => {
+      const mainSections = document.querySelectorAll(".animate-section");
+
+      for (let i = 0; i < mainSections.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = mainSections[i].getBoundingClientRect().top;
+        const elementVisible = 100;
+        const limit = windowHeight - elementVisible;
+
+        if (elementTop < limit) {
+          mainSections[i].classList.add("animateAllChildActive");
+        } else {
+          // mainSections[i].classList.remove("animateAllChildActive");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", animation);
+
+    return () => {
+      window.addEventListener("scroll", animation);
+    };
+  }, []);
+
   return (
     <div>
       <Head>
@@ -175,20 +203,20 @@ const Home: NextPage = () => {
           <Introduction />
         </section>
 
-        <section className="main-section">
+        <section className="main-section animate-section">
           <AboutMyself />
         </section>
 
-        <section className="main-section">
+        <section className="main-section animate-section">
           <Experience />
         </section>
 
-        <section className="main-section">
+        <section className="main-section animate-section">
           <FeaturedProducts />
         </section>
 
         <section
-          className="main-section"
+          className="main-section animate-section"
           style={{ paddingTop: 50, paddingBottom: 0 }}
         >
           <Footer />

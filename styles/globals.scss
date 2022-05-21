@@ -88,13 +88,13 @@ p {
   background-color: $background-colour;
 }
 
-.after-border li:last-of-type {
-  display: block;
-  width: 0.5px;
-  height: 140px;
-  margin: 0px auto;
-  background-color: $border-colour;
-}
+// .after-border li:last-of-type {
+//   display: block;
+//   width: 0.5px;
+//   height: 140px;
+//   margin: 0px auto;
+//   background-color: $border-colour;
+// }
 
 .semibold {
   font-weight: 600;
@@ -181,6 +181,10 @@ p {
   align-items: center;
 }
 
+.animate-section > * {
+  opacity: 0;
+}
+
 @media only screen and (min-width: 600px) {
   .pdf-viewer {
     display: flex;
@@ -235,7 +239,7 @@ p {
   .desktop-email {
     position: fixed;
     right: 25px;
-    top: 50vh;
+    top: 35vh;
     visibility: visible;
     opacity: 1;
     transition: visibility 0.25s, opacity 0.25s linear;

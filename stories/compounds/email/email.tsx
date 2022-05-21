@@ -17,7 +17,7 @@ export const Email = () => {
         data-testid="storybook-email"
         className="desktop-email storybook-hover-icon"
       >
-        <span className={styles.border} />
+        {/* <span className={styles.border} /> */}
         <a href={`mailto: ${emailAddress}` + emailContent}>
           <Text
             className={`${styles.verticalText}`}
