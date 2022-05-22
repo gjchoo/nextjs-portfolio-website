@@ -174,7 +174,7 @@ export const experienceList = [
 
 export const featuredProductList = [
   {
-    website: "https://www.memey.co",
+    website: "https://memey.co",
     source: "/memey.webp",
     title: "Humour Connects - Easier than ever.",
     subTitle:
