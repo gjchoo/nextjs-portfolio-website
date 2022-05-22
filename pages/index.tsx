@@ -51,40 +51,52 @@ const Home: NextPage = () => {
           name="description"
           content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
         />
-        <meta name="image" content="/gjchoo.png"></meta>
+        <meta name="image" content="https://www.gjchoo.com/gjchoo.png" />
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:creator"
           content={
             "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
           }
-          key="twhandle"
         />
 
         {/* Open Graph */}
-        <meta
-          property="og:url"
-          content={"https://www.gjchoo.com"}
-          key="ogurl"
-        />
-        <meta property="og:image" content={"/gjchoo.png"} key="ogimage" />
-        <meta property="og:site_name" content={newLocal} key="ogsitename" />
         <meta
           property="og:title"
           content={
             "Gian Jie - A Software Engineer Who Loves To Develop Web And Mobile App"
           }
-          key="ogtitle"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={"https://www.gjchoo.com"} />
+        <meta
+          property="og:image"
+          content={"https://www.gjchoo.com/gjchoo.png"}
+        />
+        <meta property="og:site_name" content={newLocal} />
+
         <meta
           property="og:description"
           content={
             "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
           }
-          key="ogdesc"
         />
+
+        <meta property="og:image" content="https://www.gjchoo.com/gjchoo.png" />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.gjchoo.com/gjchoo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="193" />
+        <meta property="og:image:height" content="368" />
+        <meta
+          property="og:image:alt"
+          content="Singapore Software Engineer gjchoo"
+        />
+
         <link
           rel="apple-touch-icon"
           sizes="57x57"
