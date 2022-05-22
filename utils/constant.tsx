@@ -4,8 +4,13 @@ export const navIconSize = 25;
 
 export const socialMedia = [
   {
+    src: "/medium.svg",
+    alt: "Medium Gjchoo Software Engineer Singapore",
+    key: "https://medium.com/@gjchoo",
+  },
+  {
     src: "/linkedin.svg",
-    alt: "Software Engineer Singapore Gjchoo",
+    alt: "Linkedin Gjchoo Software Engineer Singapore",
     key: "https://www.linkedin.com/in/gjchoo/",
   },
   {
