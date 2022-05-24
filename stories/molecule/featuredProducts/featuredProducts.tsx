@@ -54,20 +54,21 @@ export const FeaturedProducts = () => {
                 <h3 className="fs14 medium primary-color margin-0 left-align">
                   Featured Project
                 </h3>
-                <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
-                  {e.appName}
-                </p>
                 {e.website ? (
                   <a href={e.website} target="_blank" rel="noreferrer">
-                    <h3 className="fs38 medium primary-color padding-margin-0">
-                      {e.title}
-                    </h3>
+                    <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
+                      {e.appName}
+                    </p>
                   </a>
                 ) : (
-                  <h3 className="fs48 medium primary-color padding-margin-0">
-                    {e.title}
-                  </h3>
+                  <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
+                    {e.appName}
+                  </p>
                 )}
+
+                <h3 className="fs38 medium primary-color padding-margin-0">
+                  {e.title}
+                </h3>
 
                 <p className={`light fs18 secondary-color`}>{e.subTitle}</p>
 
