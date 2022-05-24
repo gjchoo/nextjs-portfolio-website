@@ -19,6 +19,7 @@ interface FeaturedProductsProps {
   techList: string[];
   channels?: ChannelsProps[];
   website: string;
+  appName?: string;
 }
 
 export const FeaturedProducts = () => {
@@ -39,15 +40,23 @@ export const FeaturedProducts = () => {
         {featuredProductList.map((e: FeaturedProductsProps) => (
           <li className="item" key={e.title}>
             <div className={styles.contentDirection}>
-              <img
-                className={styles.featureProductImg}
-                src={e.source}
-                alt={e.title}
-                height={"100%"}
-                width={"100%"}
-              />
+              <div className="full-width">
+                <img
+                  className={styles.featureProductImg}
+                  src={e.source}
+                  alt={e.title}
+                  height={"100%"}
+                  width={"100%"}
+                />
+              </div>
 
               <div className={styles.featureProductContent}>
+                <h3 className="fs14 medium primary-color margin-0 left-align">
+                  Featured Project
+                </h3>
+                <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
+                  {e.appName}
+                </p>
                 {e.website ? (
                   <a href={e.website} target="_blank" rel="noreferrer">
                     <h3 className="fs38 medium primary-color padding-margin-0">
