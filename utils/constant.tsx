@@ -194,7 +194,7 @@ export const featuredProductList = [
     title: "Don't starve, just order",
     subTitle:
       "House Downstairs is a specialty cafe in Singapore located at Ulu Pandan Community Club. When Singapore Government announced Covid-19 lockdown, I was tasked to develop a full ecommerce responsive website using Next.js and Node.js.",
-    techList: ["React.js", "Next.js", "Node.js", "Express"],
+    techList: ["React.js", "Next.js", "Node.js", "Strapi", "Express"],
   },
   // {
   //   website: "https://www.memey.co",
