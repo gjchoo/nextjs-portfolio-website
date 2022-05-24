@@ -43,6 +43,10 @@ p {
   text-underline-offset: 3.5px;
 }
 
+.text-shadow {
+  text-shadow: 0.5px 0.5px 0.5px $background-colour;
+}
+
 .right-align {
   text-align: right;
 }

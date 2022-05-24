@@ -93,6 +93,7 @@ export const experienceList = [
       "Implement design system thinking to streamline the development and automating testing for usability and increase scalability",
     ],
     logo: "/ibm.png",
+    iconOnly: true,
   },
   {
     company: "EYOS",
@@ -106,6 +107,7 @@ export const experienceList = [
       "Initiated effort to demonstrate Hybrid App with Progressive Web App scales better over native development and lead the Proof of Concept for hybrid app",
     ],
     logo: "/eyos.png",
+    iconOnly: true,
   },
   {
     company: "OC Digital",
@@ -131,7 +133,7 @@ export const experienceList = [
       "Developed the app using React Native and Express.js",
       "Implemented automating testing for usability and increase scalability using detox",
     ],
-    logo: "/bubbiesco.png",
+    logo: "/BBSS.webp",
   },
   {
     company: "HappyHourSG",
@@ -144,7 +146,7 @@ export const experienceList = [
       "Integrated RESTs API with cloud server, deployed Redis in server as caching mechanism to reduce network latency",
       "Implemented Websocket in Node.js to develope real time chat features",
     ],
-    logo: "/happyhoursg.png",
+    logo: "/hhss.webp",
   },
   {
     company: "Spae",
@@ -157,7 +159,7 @@ export const experienceList = [
       "Data mining securities trading history, cleaning and preparation for modelling the AI",
       "Trained the model using Keras with Tensorflow backend and successfully integrated in cloud server (Flask) and connect to mobile application for real time prediction",
     ],
-    logo: "/spae.png",
+    logo: "/SpaeSS.webp",
   },
   {
     company: "WieldyWorld",
@@ -169,7 +171,7 @@ export const experienceList = [
       "Participated in product cycle from conceptualising, mockup and developing of the prototype",
       "Worked with stakeholders, different departments and other key members for development and product improvements",
     ],
-    logo: "/ww.png",
+    logo: "/WWSS.webp",
   },
 ];
 

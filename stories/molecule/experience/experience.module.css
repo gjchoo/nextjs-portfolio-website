@@ -33,6 +33,7 @@
 }
 
 .oneColumn {
+  position: relative;
   list-style-type: none;
   columns: 1;
   -webkit-columns: 1;

@@ -12,6 +12,7 @@ interface ExperienceListProps {
   duration: string;
   highlights: string[];
   logo: string;
+  iconOnly?: boolean;
 }
 
 export const Experience = () => {
@@ -42,7 +43,7 @@ export const Experience = () => {
       <h2>
         <span className="regular fs18 secondary-color">02: </span>
         <span className="regular fs24 primary-color">
-          {`Here's where I've worked`}
+          {`Here's where I've Worked`}
         </span>
       </h2>
 
@@ -116,33 +117,53 @@ export const Experience = () => {
                 {e.highlights.map((text: string, index: number) => (
                   <li key={index} className={styles.listItem}>
                     <p
-                      className="fs18 secondary-color light marginVertical-10 storybook-hover-icon"
+                      className="text-shadow fs18 secondary-color light marginVertical-10 storybook-hover-icon"
                       style={{ whiteSpace: "pre-wrap" }}
                     >
                       {text}
                     </p>
                   </li>
                 ))}
+                {!e.iconOnly ? (
+                  e.logo && (
+                    <div
+                      className={styles.showLogo}
+                      style={{
+                        position: "absolute",
+                        top: "-10%",
+                        right: "-5%",
+                        zIndex: -1,
+                      }}
+                    >
+                      <img
+                        className={styles.featureProductImg}
+                        src={e.logo}
+                        alt={e.title}
+                        width={350}
+                        height={"100%"}
+                      />
+                    </div>
+                  )
+                ) : (
+                  <div
+                    className={styles.showLogo}
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      right: "10%",
+                      zIndex: -1,
+                    }}
+                  >
+                    <img
+                      className={styles.featureProductImg}
+                      src={e.logo}
+                      alt={e.title}
+                      width={180}
+                      height={"100%"}
+                    />
+                  </div>
+                )}
               </ul>
-
-              {e.logo && (
-                <div
-                  className={styles.showLogo}
-                  style={{
-                    position: "absolute",
-                    bottom: "25%",
-                    right: "10%",
-                  }}
-                >
-                  <img
-                    className={styles.featureProductImg}
-                    src={e.logo}
-                    alt={e.title}
-                    width={90}
-                    height={"100%"}
-                  />
-                </div>
-              )}
             </div>
           );
         })}
