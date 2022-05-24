@@ -16,7 +16,7 @@ export const Footer = () => {
     >
       <h2>
         <span className="regular fs18 secondary-color">04: </span>
-        <span className="regular fs24 primary-color">{`Let's Get In Touch`}</span>
+        <span className="regular fs24 primary-color">{`Let's get in touch`}</span>
       </h2>
       <p
         className={[

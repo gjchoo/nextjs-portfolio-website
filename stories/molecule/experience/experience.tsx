@@ -42,7 +42,7 @@ export const Experience = () => {
       <h2>
         <span className="regular fs18 secondary-color">02: </span>
         <span className="regular fs24 primary-color">
-          {`Here's Where I've Worked`}
+          {`Here's where I've worked`}
         </span>
       </h2>
 

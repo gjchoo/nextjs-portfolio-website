@@ -31,7 +31,7 @@ export const FeaturedProducts = () => {
       <h2 style={{ marginBottom: 50 }}>
         <span className="regular fs18 secondary-color">03: </span>
         <span className="regular fs24 primary-color">
-          Some Of My Notable Works
+          {`Things that I've built`}
         </span>
       </h2>
 
@@ -62,9 +62,16 @@ export const FeaturedProducts = () => {
 
                 <p className={`light fs18 secondary-color`}>{e.subTitle}</p>
 
-                <p className={`light fs14 primary-color`}>
-                  {e.techList.join(", ")}
-                </p>
+                <ul className="row">
+                  {e.techList.map((e: string) => (
+                    <p
+                      key={e}
+                      className={`light fs14 primary-color paddingRight-20`}
+                    >
+                      {e}
+                    </p>
+                  ))}
+                </ul>
 
                 {e.channels && (
                   <ul className="row">

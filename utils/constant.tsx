@@ -76,7 +76,8 @@ export const skillList = [
   "React Native",
   "Node.js",
   "Next.js",
-  "WebPack 5",
+  "Webpack 5",
+  "Scss",
 ];
 
 export const experienceList = [
