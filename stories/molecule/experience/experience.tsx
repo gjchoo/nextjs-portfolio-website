@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
+import Img from "next/image";
 import styles from "./experience.module.css";
 
 import { experienceList } from "../../../utils/constant";
@@ -136,7 +137,6 @@ export const Experience = () => {
                       }}
                     >
                       <img
-                        className={styles.featureProductImg}
                         src={e.logo}
                         alt={e.title}
                         width={350}
@@ -155,7 +155,6 @@ export const Experience = () => {
                     }}
                   >
                     <img
-                      className={styles.featureProductImg}
                       src={e.logo}
                       alt={e.title}
                       width={180}
