@@ -40,7 +40,7 @@ export const FeaturedProducts = () => {
         {featuredProductList.map((e: FeaturedProductsProps) => (
           <li className="item" key={e.title}>
             <div className={styles.contentDirection}>
-              <div className="full-width">
+              <div className="full-width justify-center align-center">
                 <img
                   className={styles.featureProductImg}
                   src={e.source}
@@ -72,16 +72,11 @@ export const FeaturedProducts = () => {
 
                 <p className={`light fs18 secondary-color`}>{e.subTitle}</p>
 
-                <ul className="row">
-                  {e.techList.map((e: string) => (
-                    <p
-                      key={e}
-                      className={`light fs14 primary-color paddingRight-20`}
-                    >
-                      {e}
-                    </p>
-                  ))}
-                </ul>
+                <div>
+                  <p className={`light fs12 primary-color`}>
+                    {e.techList.join(" ")}
+                  </p>
+                </div>
 
                 {e.channels && (
                   <ul className="row">

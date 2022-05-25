@@ -148,6 +148,10 @@ p {
   font-size: 0.875rem;
 }
 
+.fs12 {
+  font-size: 0.75rem;
+}
+
 .storybook-hover-icon:hover,
 .storybook-hover-icon:focus {
   transition: 5s;
@@ -173,6 +177,11 @@ p {
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column {

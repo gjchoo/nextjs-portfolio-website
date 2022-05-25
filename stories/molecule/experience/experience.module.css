@@ -52,10 +52,6 @@
   max-width: 441px;
 }
 
-.showLogo {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   .contentHeight {
     position: relative;
@@ -68,6 +64,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .showLogo {
+    display: none;
+  }
+
   .contentHeight {
     position: relative;
     height: 100vh;
