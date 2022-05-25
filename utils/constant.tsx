@@ -171,7 +171,7 @@ export const experienceList = [
       "Participated in product cycle from conceptualising, mockup and developing of the prototype",
       "Worked with stakeholders, different departments and other key members for development and product improvements",
     ],
-    logo: "/WWSS.webp",
+    logo: "/wwss.webp",
   },
 ];
 
