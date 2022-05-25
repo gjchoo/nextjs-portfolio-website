@@ -59,7 +59,7 @@
   }
 
   .showLogo {
-    display: block;
+    display: flex;
   }
 }
 
