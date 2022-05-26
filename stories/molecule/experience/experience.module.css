@@ -40,11 +40,11 @@
   -moz-columns: 1;
 }
 
-.listItem:before {
+/* .listItem:before {
   content: "• ";
   color: #bebebe;
   padding: 0px 20px;
-}
+} */
 
 .listItem {
   display: flex;
@@ -52,7 +52,7 @@
   max-width: 441px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 955px) {
   .contentHeight {
     position: relative;
     height: 60vh;
@@ -60,7 +60,7 @@
 
   .showProductDisplay {
     position: absolute;
-    top: -10%;
+    top: -30%;
     right: -5%;
     z-index: -1;
     transition: all 0.5s;
@@ -83,7 +83,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .showProductDisplay {
     position: absolute;
     top: 170%; /* position the top  edge of the element at the middle of the parent */
@@ -110,17 +110,55 @@
   }
 
   .productSize {
-    width: 320px;
+    width: 300px;
   }
 
   .logoSize {
     width: 225px;
   }
-}
 
-@media only screen and (max-width: 767px) and (min-width: 520px) {
   .contentHeight {
     position: relative;
-    height: 70vh;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 954px) and (min-width: 481px) {
+  .showProductDisplay {
+    position: absolute;
+    top: 200%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.5s;
+    opacity: 0.25;
+  }
+
+  .contentHeight {
+    position: relative;
+    height: 100vh;
+  }
+
+  .logoStyle {
+    position: absolute;
+    top: 130%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    opacity: 0.07;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  .productSize {
+    width: 375px;
+  }
+
+  .logoSize {
+    width: 225px;
+  }
+
+  .contentHeight {
+    position: relative;
+    height: 100vh;
   }
 }
