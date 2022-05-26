@@ -1,12 +1,12 @@
 import Img from "next/image";
 
-import { navIconSize } from "../../../utils/constant";
+import { navIconSize, icon } from "../../../utils/constant";
 
 const PreLoader = () => {
   return (
     <div className="logo-entry" data-testid="storybook-preloader">
       <Img
-        src={"/gj.svg"}
+        src={icon}
         height={navIconSize * 2}
         width={navIconSize * 2}
         layout="fixed"

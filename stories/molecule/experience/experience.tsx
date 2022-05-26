@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import Img from "next/image";
 import styles from "./experience.module.css";
 
-import { experienceList } from "../../../utils/constant";
+import { ExperienceList } from "../../../utils/constants";
+
 import { Text, SizeTypes, WeightTypes } from "../../atom/text/text";
 
 interface ExperienceListProps {
@@ -19,7 +19,7 @@ interface ExperienceListProps {
 export const Experience = () => {
   // const [index, setIndex] = useState("0");
   const [currentCompany, SetCurrentCompany] = useState(
-    experienceList[0].company
+    ExperienceList[0].company
   );
 
   const onSelectIndex = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -49,7 +49,7 @@ export const Experience = () => {
       </h2>
 
       <ul id="scrollTab" className={styles.experienceRow}>
-        {experienceList.map((e: ExperienceListProps, index: number) => {
+        {ExperienceList.map((e: ExperienceListProps, index: number) => {
           return (
             <li key={e.company}>
               <div
@@ -85,7 +85,7 @@ export const Experience = () => {
       </p> */}
 
       <ul className={styles.contentHeight}>
-        {experienceList.map((e: ExperienceListProps) => {
+        {ExperienceList.map((e: ExperienceListProps) => {
           let animationType;
 
           if (isCurrentCompany(e.company)) {

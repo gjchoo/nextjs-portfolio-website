@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 
 import styles from "./featuredProducts.module.css";
 
-import { featuredProductList } from "../../../utils/constant";
+import { FeaturedList } from "../../../utils/constants";
+
 import Img from "next/image";
 
 interface ChannelsProps {
@@ -37,7 +38,7 @@ export const FeaturedProducts = () => {
       </h2>
 
       <ul>
-        {featuredProductList.map((e: FeaturedProductsProps) => (
+        {FeaturedList.map((e: FeaturedProductsProps) => (
           <li className="item" key={e.title}>
             <div className={styles.contentDirection}>
               <div className="full-width justify-center align-center">

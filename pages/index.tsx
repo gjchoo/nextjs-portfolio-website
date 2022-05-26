@@ -173,6 +173,10 @@ const Home: NextPage = () => {
           sizes="16x16"
           href="/icons/favicon-16x16.png"
         />
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
         <link rel="manifest" href="/icons/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta

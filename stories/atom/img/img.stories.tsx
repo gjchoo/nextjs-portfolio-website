@@ -2,9 +2,9 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Img } from "./img";
-import { socialMedia } from "../../../utils/constant";
+import { SocialMediaList } from "../../../utils/constants";
 
-const arrayList = socialMedia.filter((e) => e.src).map((e) => e.src);
+const arrayList = SocialMediaList.filter((e) => e.src).map((e) => e.src);
 
 export default {
   title: "Atoms/Img",

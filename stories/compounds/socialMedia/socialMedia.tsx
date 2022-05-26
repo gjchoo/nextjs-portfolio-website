@@ -3,7 +3,9 @@ import React from "react";
 
 import { Img } from "../../atom/img/img";
 
-import { navIconSize, socialMedia } from "../../../utils/constant";
+import { navIconSize } from "../../../utils/constant";
+
+import { SocialMediaList } from "../../../utils/constants";
 
 export interface SocialMediaProps {
   orientation?: string;
@@ -27,7 +29,7 @@ export const SocialMedia = ({
             : "column width-45 after-border social-media-desktop "
         }`}
       >
-        {socialMedia.map((e: SocialMediaListProps) =>
+        {SocialMediaList.map((e: SocialMediaListProps) =>
           e.key ? (
             <li
               key={e.alt}
