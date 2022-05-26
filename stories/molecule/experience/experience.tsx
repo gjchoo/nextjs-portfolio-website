@@ -118,7 +118,7 @@ export const Experience = () => {
                 {e.highlights.map((text: string, index: number) => (
                   <li key={index} className={styles.listItem}>
                     <p
-                      className="text-shadow fs18 secondary-color light marginVertical-10 storybook-hover-icon"
+                      className="text-shadow fs18 secondary-color light marginVertical-10 storybook-hover-icon animatePColor"
                       style={{ whiteSpace: "pre-wrap" }}
                     >
                       {text}
@@ -127,37 +127,21 @@ export const Experience = () => {
                 ))}
                 {!e.iconOnly ? (
                   e.logo && (
-                    <div
-                      className={styles.showLogo}
-                      style={{
-                        position: "absolute",
-                        top: "-10%",
-                        right: "-5%",
-                        zIndex: -1,
-                      }}
-                    >
+                    <div className={styles.showProductDisplay}>
                       <img
                         src={e.logo}
                         alt={e.title}
-                        width={350}
+                        width={375}
                         height={"100%"}
                       />
                     </div>
                   )
                 ) : (
-                  <div
-                    className={styles.showLogo}
-                    style={{
-                      position: "absolute",
-                      top: "50%",
-                      right: "10%",
-                      zIndex: -1,
-                    }}
-                  >
+                  <div className={styles.logoStyle}>
                     <img
+                      className={styles.logoSize}
                       src={e.logo}
                       alt={e.title}
-                      width={180}
                       height={"100%"}
                     />
                   </div>
