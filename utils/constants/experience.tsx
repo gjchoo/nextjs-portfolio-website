@@ -77,7 +77,7 @@ const Index = [
     highlights: [
       "Worked along with creative director in implementing UI UX for the mobile application",
       "Data mining securities trading history, cleaning and preparation for modelling the AI",
-      "Trained the model using Keras with Tensorflow backend and successfully integrated in cloud server (Flask) and connect to mobile application for real time prediction",
+      "Successfully integrated in cloud server and connect to mobile application for real time prediction",
     ],
     logo: path + "spaes.webp",
   },

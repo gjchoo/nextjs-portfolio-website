@@ -133,3 +133,13 @@
   animation-iteration-count: 1;
   transform: translate(0, 100px);
 }
+
+.animateDisplayProductActive {
+  opacity: 1 !important;
+  transition: opacity 0.5s !important;
+}
+
+.animateDisplayProductInActive {
+  opacity: 0.25 !important;
+  transition: opacity 0.5s !important;
+}

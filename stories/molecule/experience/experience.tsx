@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./experience.module.css";
 
 import { ExperienceList } from "../../../utils/constants";
@@ -18,6 +18,9 @@ interface ExperienceListProps {
 
 export const Experience = () => {
   // const [index, setIndex] = useState("0");
+
+  const isCurrentCompany = (company: string) => company === currentCompany;
+
   const [currentCompany, SetCurrentCompany] = useState(
     ExperienceList[0].company
   );
@@ -33,7 +36,44 @@ export const Experience = () => {
     // }
   };
 
-  const isCurrentCompany = (company: string) => company === currentCompany;
+  useEffect(() => {
+    const handleScroll = () => {
+      const experienceViewPort = document.getElementById("experienceViewPort");
+      const offsetTop = experienceViewPort?.getBoundingClientRect().top;
+      if (experienceViewPort) {
+        const allDisplayProduct = document.querySelectorAll(
+          "[id='showProductDisplay']"
+        );
+
+        for (let i = 0; i < allDisplayProduct.length; i++) {
+          const windowHeight = window.innerHeight;
+          const offsetTop = allDisplayProduct[i].getBoundingClientRect().top;
+          const elementVisible = 200;
+          const limit = windowHeight - elementVisible;
+
+          if (offsetTop < limit) {
+            allDisplayProduct[i]?.classList.remove(
+              "animateDisplayProductInActive"
+            );
+            allDisplayProduct[i]?.classList.add("animateDisplayProductActive");
+          } else {
+            allDisplayProduct[i]?.classList.remove(
+              "animateDisplayProductActive"
+            );
+            allDisplayProduct[i]?.classList.add(
+              "animateDisplayProductInActive"
+            );
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return function cleanup() {
+      window.addEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div
@@ -84,7 +124,7 @@ export const Experience = () => {
           `Before ${currentCompany}`}
       </p> */}
 
-      <ul className={styles.contentHeight}>
+      <ul id="experienceViewPort" className={styles.contentHeight}>
         {ExperienceList.map((e: ExperienceListProps) => {
           let animationType;
 
@@ -127,17 +167,20 @@ export const Experience = () => {
                 ))}
                 {!e.iconOnly ? (
                   e.logo && (
-                    <div className={styles.showProductDisplay}>
+                    <div
+                      id="showProductDisplay"
+                      className={styles.showProductDisplay}
+                    >
                       <img
+                        className={styles.productSize}
                         src={e.logo}
                         alt={e.title}
-                        width={375}
                         height={"100%"}
                       />
                     </div>
                   )
                 ) : (
-                  <div className={styles.logoStyle}>
+                  <div id="showProductDisplay" className={styles.logoStyle}>
                     <img
                       className={styles.logoSize}
                       src={e.logo}

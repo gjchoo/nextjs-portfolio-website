@@ -77,12 +77,16 @@
   .logoSize {
     width: 180px;
   }
+
+  .productSize {
+    width: 375px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .showProductDisplay {
     position: absolute;
-    top: 140%; /* position the top  edge of the element at the middle of the parent */
+    top: 170%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -97,7 +101,7 @@
 
   .logoStyle {
     position: absolute;
-    top: 120%; /* position the top  edge of the element at the middle of the parent */
+    top: 130%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     opacity: 0.07;
@@ -105,8 +109,12 @@
     transition: all 0.5s;
   }
 
+  .productSize {
+    width: 320px;
+  }
+
   .logoSize {
-    width: 375px;
+    width: 225px;
   }
 }
 
