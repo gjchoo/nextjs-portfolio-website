@@ -30,6 +30,7 @@ const Home: NextPage = () => {
           mainSections[i].classList.add("animateAllChildActive");
         } else {
           // mainSections[i].classList.remove("animateAllChildActive");
+          // test
         }
       }
     };
