@@ -1,3 +1,5 @@
+@import "../../../styles/_variables";
+
 .experienceRow::-webkit-scrollbar {
   display: none;
 }
@@ -79,7 +81,7 @@
   }
 
   .productSize {
-    width: 375px;
+    width: $product-size-955;
   }
 }
 
@@ -110,7 +112,7 @@
   }
 
   .productSize {
-    width: 250px;
+    width: $product-size-480;
   }
 
   .logoSize {
@@ -150,7 +152,7 @@
   }
 
   .productSize {
-    width: 320px;
+    width: $product-size-481-954;
   }
 
   .logoSize {

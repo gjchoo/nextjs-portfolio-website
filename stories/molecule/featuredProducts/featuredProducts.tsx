@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from "react";
 
-import styles from "./featuredProducts.module.css";
+import styles from "./featuredProducts.module.scss";
 
 import { FeaturedList } from "../../../utils/constants";
 

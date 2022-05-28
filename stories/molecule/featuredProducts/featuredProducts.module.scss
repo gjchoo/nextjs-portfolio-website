@@ -1,3 +1,5 @@
+@import "../../../styles/_variables";
+
 .featureProductsContainer {
   max-width: 1000px;
   display: flex;
@@ -31,7 +33,7 @@
 
   .featureProductImg {
     max-height: 400px;
-    width: 480px;
+    width: $product-size-955;
     object-fit: contain;
     transition: all 0.5s;
   }
@@ -55,7 +57,31 @@
 
   .featureProductImg {
     max-height: 320px;
+    width: $product-size-955;
+    object-fit: contain;
+    transition: all 0.5s;
+  }
+}
+
+@media only screen and (max-width: 954px) and (min-width: 481px) {
+  .contentDirection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .featureProductContent {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .featureProductImg {
+    max-height: 320px;
+    width: $product-size-481-954;
     object-fit: contain;
     transition: all 0.5s;
   }

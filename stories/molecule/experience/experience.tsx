@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-import styles from "./experience.module.css";
+import styles from "./experience.module.scss";
 
 import { ExperienceList } from "../../../utils/constants";
 
@@ -48,7 +48,7 @@ export const Experience = () => {
         for (let i = 0; i < allDisplayProduct.length; i++) {
           const windowHeight = window.innerHeight;
           const offsetTop = allDisplayProduct[i].getBoundingClientRect().top;
-          const elementVisible = 200;
+          const elementVisible = 250;
           const limit = windowHeight - elementVisible;
 
           if (offsetTop < limit) {
