@@ -11,7 +11,17 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,css,scss,tsx,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js, tsx}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "next": "12.1.6",
@@ -44,6 +54,7 @@
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-storybook": "^0.5.11",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "postcss": "^8.4.13",

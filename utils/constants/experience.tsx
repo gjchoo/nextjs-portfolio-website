@@ -3,7 +3,7 @@ const path = "/assets/experience/";
 const Index = [
   {
     company: "IBM",
-    title: "Frontend Software Engineer",
+    title: "Software Engineer",
     about:
       "At IBM, work is more than a job - it's a calling: To build. To design. To code. To consult. To think along with clients and sell. To make markets. To invent. To collaborate. Not just to do something better, but to attempt things you've never thought possible. To lead in this new era of technology and solve some of the world's most challenging problems.",
     duration: "Feb 2022 - Present",
@@ -31,7 +31,7 @@ const Index = [
   },
   {
     company: "OC Digital",
-    title: "Frontend Software Engineer",
+    title: "Software Engineer",
     about:
       "OC Digital believes in helping companies to become greater through the power of digital marketing. The results-oriented digital marketing solutions have helped boost many brands’ image and equity. Founded in 2010, the agency is one of the leading and fastest-growing integrated digital marketing agencies in the region.",
     duration: "Jul 2019 - Mar 2020",
