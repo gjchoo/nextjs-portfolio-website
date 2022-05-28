@@ -20,7 +20,7 @@
     "*.{js,css,scss,tsx,json,md}": [
       "prettier --write"
     ],
-    "*.{js, tsx}": [
+    "*.js": [
       "eslint --fix"
     ]
   },
@@ -55,9 +55,10 @@
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-storybook": "^0.5.11",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
+    "lint-staged": "^12.4.2",
     "postcss": "^8.4.13",
     "sass": "^1.51.0",
     "sass-loader": "^13.0.0",
