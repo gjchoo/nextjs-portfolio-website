@@ -45,57 +45,43 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
+        {/* <!-- HTML Meta Tags --> */}
         <title>
-          Gian Jie - A Software Engineer Who Loves To Develop Web And Mobile App
+          A Software Engineer Who Loves To Develop Web And Mobile App
         </title>
         <meta
           name="description"
-          content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
-        />
-        <meta name="image" content="https://www.gjchoo.com/gjchoo.png" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:creator"
-          content={
-            "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
-          }
+          content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products"
         />
 
-        {/* Open Graph */}
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://www.gjchoo.com/" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content={
-            "Gian Jie - A Software Engineer Who Loves To Develop Web And Mobile App"
-          }
+          content="A Software Engineer Who Loves To Develop Web And Mobile App"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={"https://www.gjchoo.com"} />
-        <meta
-          property="og:image"
-          content={"https://www.gjchoo.com/gjchoo.png"}
-        />
-        <meta property="og:site_name" content={newLocal} />
-
         <meta
           property="og:description"
-          content={
-            "I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products."
-          }
+          content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products"
         />
-
         <meta property="og:image" content="https://www.gjchoo.com/gjchoo.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="gjchoo.com" />
+        <meta property="twitter:url" content="https://www.gjchoo.com/" />
         <meta
-          property="og:image:secure_url"
-          content="https://www.gjchoo.com/gjchoo.png"
+          name="twitter:title"
+          content="A Software Engineer Who Loves To Develop Web And Mobile App"
         />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="193" />
-        <meta property="og:image:height" content="368" />
         <meta
-          property="og:image:alt"
-          content="Singapore Software Engineer gjchoo"
+          name="twitter:description"
+          content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.gjchoo.com/gjchoo.png"
         />
 
         <link
