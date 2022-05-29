@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { Navigation } from "../stories/compounds/navigation/navigation";
 import { SocialMedia } from "../stories/compounds/socialMedia/socialMedia";
@@ -13,9 +13,16 @@ import { Experience } from "../stories/molecule/experience/experience";
 import { FeaturedProducts } from "../stories/molecule/featuredProducts/featuredProducts";
 import { Footer } from "../stories/molecule/footer/footer";
 
-const newLocal = "https://www.gjchoo.com";
+import PreLoader from "../components/preloader";
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setTimeout(() => setLoading(!loading), 2500);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     const animation = () => {
       const mainSections = document.querySelectorAll(".animate-section");
@@ -172,35 +179,38 @@ const Home: NextPage = () => {
         />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <main>
-        <Navigation />
+      {!loading && (
+        <main>
+          <Navigation />
 
-        <SocialMedia orientation="vertical" />
-        <Email />
+          <SocialMedia orientation="vertical" />
+          <Email />
 
-        <section className="main-section">
-          <Introduction />
-        </section>
+          <section className="main-section">
+            <Introduction />
+          </section>
 
-        <section className="main-section animate-section">
-          <AboutMyself />
-        </section>
+          <section className="main-section animate-section">
+            <AboutMyself />
+          </section>
 
-        <section className="main-section animate-section">
-          <Experience />
-        </section>
+          <section className="main-section animate-section">
+            <Experience />
+          </section>
 
-        <section className="main-section animate-section">
-          <FeaturedProducts />
-        </section>
+          <section className="main-section animate-section">
+            <FeaturedProducts />
+          </section>
 
-        <section
-          className="main-section animate-section"
-          style={{ paddingTop: 50, paddingBottom: 0 }}
-        >
-          <Footer />
-        </section>
-      </main>
+          <section
+            className="main-section animate-section"
+            style={{ paddingTop: 50, paddingBottom: 0 }}
+          >
+            <Footer />
+          </section>
+        </main>
+      )}
+      <PreLoader />
     </div>
   );
 };
