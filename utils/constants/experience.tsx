@@ -44,7 +44,7 @@ const Index = [
   },
   {
     company: "Bubbies Co",
-    title: "Mobile Software Engineer",
+    title: "Mobile Software Engineer (react native)",
     about:
       "Bubbies Co is a dating app Startup, focused on making each couple story meaningful. It simplifies the process of meeting like-minded through love languages, intention and interests. Promoting online to offline interaction by suggesting places of interests based on the similarities between the users in their conversation windows.",
     duration: "Jan - Jul 2019",
