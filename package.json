@@ -12,6 +12,7 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "test": "jest --watch",
+    "coverage": "jest --coverage",
     "test:ci": "jest --ci",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
