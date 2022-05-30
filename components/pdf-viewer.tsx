@@ -7,12 +7,14 @@ import workerSrc from "../pdf-worker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 export default function PDFViewer() {
-  const [file] = useState("./resume/resume_gjchoo.pdf");
-  const [numPages, setNumPages] = useState(null);
+  const file = "./resume/resume_gjchoo.pdf";
+  const [numPages, setNumPages] = useState(0);
 
   function onDocumentLoadSuccess({ numPages }: any) {
     setNumPages(numPages);
   }
+
+  console.log(Array.from({ length: numPages }, (_, i) => i + 1));
 
   return (
     <div className="pdf-viewer">
@@ -29,7 +31,7 @@ export default function PDFViewer() {
           />
         }
       >
-        {Array.from([numPages], (_, index) => (
+        {Array.from({ length: numPages }, (_, index) => (
           <Page
             key={`page_${index + 1}`}
             pageNumber={index + 1}
