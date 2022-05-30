@@ -37,4 +37,6 @@ what is storybook
 ## Folder Structure
 what is the outline of the app
 
-
+## Unit Tests
+1) run yarn test 
+2) for coverage - yarn coverage
