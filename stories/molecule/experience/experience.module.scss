@@ -88,7 +88,7 @@
 @media only screen and (max-width: 480px) {
   .showProductDisplay {
     position: absolute;
-    top: 150%; /* position the top  edge of the element at the middle of the parent */
+    top: 155%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -128,7 +128,7 @@
 @media only screen and (max-width: 954px) and (min-width: 481px) {
   .showProductDisplay {
     position: absolute;
-    top: 170%; /* position the top  edge of the element at the middle of the parent */
+    top: 190%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     z-index: -1;

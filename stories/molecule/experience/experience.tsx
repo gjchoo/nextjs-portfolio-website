@@ -39,7 +39,6 @@ export const Experience = () => {
   useEffect(() => {
     const handleScroll = () => {
       const experienceViewPort = document.getElementById("experienceViewPort");
-      const offsetTop = experienceViewPort?.getBoundingClientRect().top;
       if (experienceViewPort) {
         const allDisplayProduct = document.querySelectorAll(
           "[id='showProductDisplay']"
