@@ -18,25 +18,51 @@ Yes, you can fork this repo. But remember to give credit or reference back to gj
 
 
 ## 🛠  Installation & Set Up
-using nextjs
-1) Ensure your node is installed, else refer to https://nextjs.org/docs/getting-started
-2) Install dependencies
-3) Run development mode
+Next.js is a React framework that provides a lot of basic tools to build a responsive and high performance react app. The framework comes with its own routing, rendering and most important of all it has a good developer experience. I personally used Next.js for most of my projects and very naturally it is my first choice when comes to developing a portfolio. Learn more about [Next.js](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs). This setup presume you have your node.js installed.
 
+1) git clone the repo
+```
+git clone repo
+```
+
+2) Install dependencies
+
+```
+yarn install
+```
+
+3) Run development mode
+```
+yarn dev
+```
 
 ## 🚀 Ready For Production
-description of production
-1) Generate production build - "next build"
-2) Preview the production build - "start": "next start",
+To generate production ready build, you can build first then serve the production site.
 
+1) Generate production build
+```
+yarn build
+```
 
-## 🚀 Storybook Development
-what is storybook
-1) start stories development mode - "yarn storybook"
+2) Preview the production build
+```
+yarn start
+```
 
-## Folder Structure
-what is the outline of the app
+## 📖 Storybook Development
+Storybook is a open source tool for building UI components and pags. It helps developers to visualise the different components and its own documentation. I predominantely used the atomic design to create the components, the order of components start from 
+```
+atom > molecule > compound > page
+```
 
-## Unit Tests
+To start the local storybook mode
+```
+yarn storybook
+```
+
+## 💽 Unit Tests
 1) run yarn test 
 2) for coverage - yarn coverage
+
+## 📁 Folder Structure
+what is the outline of the app
