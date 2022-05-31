@@ -61,8 +61,17 @@ yarn storybook
 ```
 
 ## 💽 Unit Tests
-1) run yarn test 
-2) for coverage - yarn coverage
+For unit tests, I am using jest with react testing library. RTL is one the best tools in the market for testing react components, I enjoyed working with it and will continue to use it as my primary tool for unit testing. Learn more about [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+To run all tests
+```
+yarn test 
+```
+
+To view code coverage
+```
+yarn coverage
+```
 
 ## 📁 Folder Structure
 what is the outline of the app
