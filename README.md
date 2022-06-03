@@ -51,6 +51,9 @@ yarn start
 
 ## 📖 Storybook Development
 Storybook is a open source tool for building UI components and pags. It helps developers to visualise the different components and its own documentation. I predominantely used the atomic design to create the components, the order of components start from 
+
+<img width="1234" alt="Screenshot 2022-06-03 at 10 26 27 PM" src="https://user-images.githubusercontent.com/60134943/171873995-acd02f7f-6753-424b-b27a-5151ece09561.png">
+
 ```
 atom > molecule > compound > page
 ```
@@ -74,4 +77,18 @@ yarn coverage
 ```
 
 ## 📁 Folder Structure
-what is the outline of the app
+The framework of the next.js provided a lot of basic functionalities, therefore the app foldering is kept simple. The app contains only a few main folders which are outlined in the above section. 
+
+```
+——————— root
+  ｜——— .storybook // storybook config files
+  ｜——— components // random small components 
+  ｜——— pages      // main pages of the app
+  ｜——— stories    // main bulk of the atomic, molecules & compounds components
+  ｜——— styles     // styling scss
+  ｜——— types      // basic typescript
+  ｜——- utils.     // all of the constant files
+   ....
+```
+
+
