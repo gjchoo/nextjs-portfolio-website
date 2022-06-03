@@ -87,7 +87,7 @@ The framework of the next.js provided a lot of basic functionalities, therefore 
   ｜——— stories    // main bulk of the atomic, molecules & compounds components
   ｜——— styles     // styling scss
   ｜——— types      // basic typescript
-  ｜——- utils.     // all of the constant files
+  ｜——- utils      // all of the constant files
    ....
 ```
 
