@@ -120,16 +120,22 @@ export const Navigation = () => {
                 styles.hamBurgerContainer,
               ].join(" ")}
             >
-              <Link href={navigationList[2].url}>
-                <a className="storybook-hover-icon">
-                  <Img
-                    src={mainIcon}
-                    width={navIconSize}
-                    height={navIconSize}
-                    alt={imgGenericAlt}
-                  />
-                </a>
-              </Link>
+              <div
+                style={{
+                  display: mobileMenu ? "none" : "block",
+                }}
+              >
+                <Link href={navigationList[2].url}>
+                  <a className="storybook-hover-icon">
+                    <Img
+                      src={mainIcon}
+                      width={navIconSize}
+                      height={navIconSize}
+                      alt={imgGenericAlt}
+                    />
+                  </a>
+                </Link>
+              </div>
 
               <div
                 onClick={onMobileHamBurgerHandle}
@@ -153,7 +159,6 @@ export const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className={mobileMenu ? styles.overlayActive : styles.overlay} />
         <div
           className={mobileMenu ? styles.overlayMenuActive : styles.overlayMenu}
         >
@@ -177,20 +182,9 @@ export const Navigation = () => {
                   )
               )}
             </ol>
-            <div
-              onClick={onMobileHamBurgerHandle}
-              style={{ cursor: "pointer" }}
-            >
-              <Text
-                className={styles.centralisedText}
-                text={"CANCEL".toUpperCase()}
-                size={SizeTypes.fs18}
-                weight={WeightTypes.regular}
-                color="primary-color"
-              />
-            </div>
           </div>
         </div>
+        <div className={mobileMenu ? styles.overlayActive : styles.overlay} />
       </nav>
     </header>
   );

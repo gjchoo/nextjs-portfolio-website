@@ -1,12 +1,12 @@
 .directionUp {
   transform: translateY(-100px);
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   transition-delay: 0.5ms;
 }
 
 .directionDown {
   transform: translateY(0px);
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   transition-delay: 0.5ms;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .hamBurgerContent {
-  position: absolute;
+  position: fixed;
   height: 40px;
   width: 40px;
   right: 25px;
@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 999999999;
 }
 
 .barOne {
@@ -32,7 +32,7 @@
   height: 1.5px;
   background-color: white;
   transform: rotate(0deg);
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
@@ -41,7 +41,7 @@
   height: 1.5px;
   background-color: white;
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
@@ -49,7 +49,7 @@
   width: 40px;
   height: 1.5px;
   background-color: white;
-  transition: all 0.5s;
+  transition: all 0.3s;
   transform: rotate(0deg);
   z-index: 1;
 }
@@ -59,7 +59,7 @@
   height: 1.5px;
   background-color: white;
   transform: rotate(45deg) translateX(9px) translateY(11px);
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
@@ -68,7 +68,7 @@
   height: 1.5px;
   background-color: white;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
@@ -77,30 +77,12 @@
   height: 1.5px;
   background-color: white;
   transform: rotate(-45deg) translateX(8px) translateY(-10px);
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
-.overlayMenu {
-  position: fixed;
-  right: -65%;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 9999;
-  transform: translateX(-0%);
-  transition: all 0.5s;
-}
-
-.overlayMenuActive {
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 9999;
-  transform: translateX(-0%);
-  transition: all 0.5s;
+.centralisedText {
+  text-align: center;
 }
 
 .overlay {
@@ -110,11 +92,12 @@
   left: 0;
   right: 0;
   background-color: black;
-  transition: all 0.5s;
+  transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s linear;
-  z-index: 999;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .overlayActive {
@@ -124,13 +107,33 @@
   left: 0;
   right: 0;
   background-color: black;
-  transition: all 0.5s;
+  transition: all 0.3s;
   visibility: visible;
   opacity: 0.9;
   transition: visibility 0.3s, opacity 0.3s linear;
-  z-index: 999;
+  z-index: -1;
 }
 
-.centralisedText {
-  text-align: center;
+.overlayMenuActive {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 9999;
+  transform: translateX(-0%);
+  transition: all 0.3s;
+}
+
+.overlayMenu {
+  position: fixed;
+  right: -65%;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 9999;
+  transform: translateX(-0%);
+  transition: all 0.3s;
 }
