@@ -24,7 +24,7 @@ const Index = [
     highlights: [
       "Spearheaded the mobile development for one of the company's vertical using React Native",
       "Successfully launched the mobile app into the largest market in South East Asia for the Connect Merchant Program",
-      "Initiated effort to demonstrate Hybrid App with Progressive Web App scales better over native development and lead the Proof of Concept for hybrid app",
+      "Initiated effort to demonstrate Hybrid App with Progressive Web App scales better over native development and led the proof of concept for hybrid app",
     ],
     logo: path + "eyos.webp",
     iconOnly: true,
@@ -88,6 +88,7 @@ const Index = [
       "Wieldyworld was an edu-startup focused on creating digital space for young children to explore, educate and learn from what the world has to offer.",
     duration: "Jan - Aug 2017",
     highlights: [
+      "Collaborated closely with head of design team to implement and develop UI for the app",
       "Participated in product cycle from conceptualising, mockup and developing of the prototype",
       "Worked with stakeholders, different departments and other key members for development and product improvements",
     ],

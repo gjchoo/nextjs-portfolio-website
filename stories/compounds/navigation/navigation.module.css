@@ -1,13 +1,15 @@
 .directionUp {
   transform: translateY(-100px);
   transition: transform 0.3s;
-  transition-delay: 0.5ms;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .directionDown {
   transform: translateY(0px);
   transition: transform 0.3s;
-  transition-delay: 0.5ms;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .hamBurgerContainer {

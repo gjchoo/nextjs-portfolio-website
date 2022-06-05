@@ -35,11 +35,11 @@ export const Navigation = () => {
       const window = e.currentTarget;
       if (y > window.scrollY) {
         if (null !== moileNavigation.current) {
-          // setDownDirection(true);
+          setDownDirection(true);
         }
       } else if (y < window.scrollY) {
         if (null !== moileNavigation.current) {
-          // setDownDirection(false);
+          setDownDirection(false);
         }
       }
       setY(window.scrollY);
