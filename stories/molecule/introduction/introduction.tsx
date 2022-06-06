@@ -26,7 +26,7 @@ export const Introduction = ({}: IntroductionProps) => {
         collaborating with a team of designers and software engineers to develop
         humancentric products at{" "}
         <a href="https://www.ibm.com/sg-en" target="_blank" rel="noreferrer">
-          <span className="medium primary-color underline">IBM</span>.
+          <span className="regular primary-color underline">IBM</span>.
         </a>
       </p>
     </div>

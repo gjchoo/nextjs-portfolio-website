@@ -35,7 +35,8 @@ export const AboutMyself = ({}: AboutMyselfProps) => {
         </a>
         <span className="regular primary-color">few startups</span>. My focus
         these days is to learn and build scalable and inclusive digital
-        experiences at <span className="regular primary-color">IBM</span>.
+        experiences at{" "}
+        <span className="regular primary-color underline">IBM</span>.
       </p>
 
       <p className={`light fs18 secondary-color`}>

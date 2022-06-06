@@ -21,6 +21,7 @@ interface FeaturedProductsProps {
   channels?: ChannelsProps[];
   website: string;
   appName?: string;
+  type: string;
 }
 
 export const FeaturedProducts = () => {
@@ -53,23 +54,24 @@ export const FeaturedProducts = () => {
 
               <div className={styles.featureProductContent}>
                 <h3 className="fs14 medium primary-color margin-0 left-align">
-                  Featured Project
+                  {e.type}
                 </h3>
+
+                <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
+                  {e.appName}
+                </p>
+
                 {e.website ? (
                   <a href={e.website} target="_blank" rel="noreferrer">
-                    <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
-                      {e.appName}
-                    </p>
+                    <h3 className="fs38 medium primary-color padding-margin-0 underline">
+                      {e.title}
+                    </h3>
                   </a>
                 ) : (
-                  <p className="fs14 regular primary-color margin-0 left-align paddingBottom-10">
-                    {e.appName}
-                  </p>
+                  <h3 className="fs38 medium primary-color padding-margin-0 underline">
+                    {e.title}
+                  </h3>
                 )}
-
-                <h3 className="fs38 medium primary-color padding-margin-0">
-                  {e.title}
-                </h3>
 
                 <p className={`light fs18 secondary-color`}>{e.subTitle}</p>
 
