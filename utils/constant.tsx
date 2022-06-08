@@ -36,12 +36,13 @@ export const navigationList = [
 ];
 
 export const skillList = [
-  "Javascript (ES6)",
-  "Typescript",
-  "React",
-  "React Native",
-  "Node.js",
-  "Next.js",
-  "Webpack 5",
-  "Scss",
+  "javascript",
+  "typescript",
+  "react",
+  "react native",
+  "node.js",
+  "next.js",
+  "webpack",
+  "rollup",
+  "scss",
 ];
