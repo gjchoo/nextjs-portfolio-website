@@ -9,7 +9,7 @@
 ![portfolio screenshot](https://user-images.githubusercontent.com/60134943/170852920-a929bef7-e278-4099-b347-f97a2acd5bb1.png)
 
 <p align='left'>
-  Here is a fully working source code of my personal portfolio using nextjs & typescript. If you would like to use the code base for your own personal porfolio or experiment with it, please remember to fork it! I will be progressively adding new features into the code base, so if you want to follow it remember to star it!
+  Here is a fully working source code of my personal portfolio using nextjs & typescript. If you would like to use the code base for your own personal porfolio or experiment with it, please remember to fork it! Change the constant file under the utilities. I will be progressively adding new features into the code base, so if you want to follow it remember to star it!
 </p>
 
 

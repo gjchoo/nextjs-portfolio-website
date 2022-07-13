@@ -61,6 +61,18 @@ const Home: NextPage = () => {
           content="I am a Singapore-based software engineer who is passionate about developing great & meaningful digital products"
         />
 
+       
+        {/*  <!-- Google Analytics --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQHVBC2PE9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DQHVBC2PE9');
+        </script>
+        
+        
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://www.gjchoo.com/" />
         <meta property="og:type" content="website" />
