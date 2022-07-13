@@ -45,4 +45,5 @@ export const skillList = [
   "webpack",
   "rollup",
   "scss",
+  "storybook",
 ];
